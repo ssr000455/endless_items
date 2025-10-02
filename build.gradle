@@ -1,0 +1,428 @@
+buildscript {
+    repositories {
+        maven { url "https://maven.aliyun.com/repository/public" }
+        maven { url "https://maven.fabricmc.net/" }
+        mavenCentral()
+    }
+    dependencies {
+        classpath "net.fabricmc:fabric-loom:1.3.9"
+    }
+}
+
+plugins {
+    id 'java'
+}
+
+apply plugin: 'fabric-loom'
+
+version = project.mod_version
+group = project.maven_group
+archivesBaseName = project.archives_base_name
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main/java', 'src/client/java']
+        }
+        resources {
+            srcDirs = ['src/main/resources']
+        }
+    }
+}
+
+repositories {
+    maven { url "https://maven.aliyun.com/repository/public" }
+    maven { url "https://maven.fabricmc.net/" }
+    mavenCentral()
+}
+
+loom {
+    mixin {
+        defaultRefmapName = "${project.archives_base_name}.refmap.json"
+    }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:1.20.1"
+    mappings loom.officialMojangMappings()
+    modImplementation "net.fabricmc:fabric-loader:0.14.22"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:0.87.0+1.20.1"
+}
+
+processResources {
+    inputs.property "version", project.version
+    filesMatching("fabric.mod.json") {
+        expand "version": project.version
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = "UTF-8"
+    options.release = 17
+}
+
+jar {
+    from("LICENSE") {
+        rename { "${it}_${project.base.archivesName.get()}"}
+    }
+}
+
+remapJar {
+    doLast {
+        def outputJar = archiveFile.get().asFile
+        println "官方映射结果: ${outputJar.name}"
+        println "大小: ${outputJar.length()} bytes"
+        
+        if (outputJar.length() > 10240) {
+            def targetFile = new File("${System.getProperty('user.home')}/storage/downloads/${project.archives_base_name}-${project.version}.jar")
+            ant.copy(file: outputJar, tofile: targetFile)
+            println "✅ 官方映射成功! 已保存: ${targetFile.absolutePath}"
+        } else {
+            println "❌ 官方映射也失败了"
+        }
+    }
+}
+
+task buildWithOfficial {
+    dependsOn clean, remapJar
+}buildscript {
+    repositories {
+        maven { url "https://maven.aliyun.com/repository/public" }
+        maven { url "https://maven.aliyun.com/repository/gradle-plugin" }
+        maven { url "https://maven.fabricmc.net/" }
+        maven { url "https://mirrors.cloud.tencent.com/nexus/repository/maven-public/" }
+        mavenCentral()
+    }
+    dependencies {
+        classpath "net.fabricmc:fabric-loom:1.3.9"
+    }
+}
+
+plugins {
+    id 'java'
+    id 'maven-publish'
+}
+
+apply plugin: 'fabric-loom'
+
+version = project.mod_version
+group = project.maven_group
+archivesBaseName = project.archives_base_name
+
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main/java', 'src/client/java']
+        }
+        resources {
+            srcDirs = ['src/main/resources', 'src/client/resources']
+        }
+    }
+}
+
+repositories {
+    maven { url "https://maven.aliyun.com/repository/public" }
+    maven { url "https://maven.aliyun.com/repository/gradle-plugin" }
+    maven { url "https://maven.fabricmc.net/" }
+    maven { url "https://mirrors.cloud.tencent.com/nexus/repository/maven-public/" }
+    maven { url "https://repo.maven.apache.org/maven2" }
+    maven { url "https://libraries.minecraft.net" }
+    maven { url "https://jitpack.io" }
+    mavenCentral()
+}
+
+configurations {
+    developmentRuntime
+}
+
+loom {
+    mixin {
+        defaultRefmapName = "${project.archives_base_name}.refmap.json"
+        useLegacyMixinAp = false
+    }
+    
+    runs {
+        client {
+            client()
+            configName = "Fabric Client"
+            ideConfigGenerated(true)
+            runDir("run/client")
+            source(sourceSets.main)
+        }
+        
+        server {
+            server()
+            configName = "Fabric Server"
+            ideConfigGenerated(true)
+            runDir("run/server")
+            source(sourceSets.main)
+        }
+    }
+    
+    // 优化设置
+    interfaceInjection {
+        enableDependencyInterfaceInjection = true
+    }
+    
+    // 解决Termux环境问题
+    setAutoTargetSources(false)
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:1.20.1"
+    mappings loom.officialMojangMappings()
+    modImplementation "net.fabricmc:fabric-loader:0.14.22"
+    
+    // Fabric API
+    modImplementation "net.fabricmc.fabric-api:fabric-api:0.87.0+1.20.1"
+    
+    // 开发时依赖
+    developmentRuntime "net.fabricmc:fabric-loader:0.14.22"
+    
+    // 测试依赖
+    testImplementation "org.junit.jupiter:junit-jupiter:5.9.2"
+    testImplementation "org.mockito:mockito-core:5.3.1"
+}
+
+processResources {
+    inputs.property "version", project.version
+    inputs.property "minecraft_version", "1.20.1"
+    inputs.property "loader_version", "0.14.22"
+    
+    filesMatching("fabric.mod.json") {
+        expand(
+            "version": project.version,
+            "minecraft_version": "1.20.1",
+            "loader_version": "0.14.22"
+        )
+    }    
+    // 排除开发文件
+    exclude("**/*.psd")
+    exclude("**/*.bbmodel")
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = "UTF-8"
+    options.release = 17
+    options.compilerArgs += ["-Xmaxerrs", "1000"]
+}
+
+tasks.withType(Test).configureEach {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+        exceptionFormat "full"
+    }
+}
+
+jar {
+    from("LICENSE") {
+        rename { "${it}_${project.base.archivesName.get()}"}
+    }
+    
+    manifest {
+        attributes(
+            'Implementation-Title': project.archives_base_name,
+            'Implementation-Version': project.version,
+            'Built-By': System.getProperty('user.name'),
+            'Built-JDK': System.getProperty('java.version'),
+            'Built-On': new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+        )
+    }
+    
+    doLast {
+        def devJar = archiveFile.get().asFile
+        println "开发版JAR: ${devJar.name}"
+        println "大小: ${devJar.length()} bytes"
+        
+        if (devJar.length() > 10000) {
+            def backupDir = new File("${project.projectDir}/build_success_backup")
+            backupDir.mkdirs()
+            def randomSuffix = Long.toHexString(System.currentTimeMillis()).substring(8)
+            def backupFile = new File(backupDir, "${project.archives_base_name}-${project.version}-${randomSuffix}-dev.jar")
+            ant.copy(file: devJar, tofile: backupFile)
+            println "✅ 开发版备份: ${backupFile.name}"
+        }
+    }
+    
+    // 保留开发版JAR
+    preserve {
+        exclude '**/temp/**'
+    }
+}
+
+remapJar {
+    doLast {
+        def outputJar = archiveFile.get().asFile
+        println "官方映射结果: ${outputJar.name}"
+        println "大小: ${outputJar.length()} bytes"
+        
+        if (outputJar.length() > 10240) {
+            def backupDir = new File("${project.projectDir}/build_success_backup")
+            backupDir.mkdirs()
+            def randomSuffix = Long.toHexString(System.currentTimeMillis()).substring(8)
+            def backupFile = new File(backupDir, "${project.archives_base_name}-${project.version}-${randomSuffix}.jar")
+            ant.copy(file: outputJar, tofile: backupFile)
+            
+            def downloadDir = new File("${System.getProperty('user.home')}/storage/downloads")
+            if (downloadDir.exists()) {
+                def downloadFile = new File(downloadDir, "${project.archives_base_name}-${project.version}-${randomSuffix}.jar")
+                ant.copy(file: outputJar, tofile: downloadFile)
+                println "✅ 官方映射成功! 已保存到下载目录: ${downloadFile.name}"
+            } else {
+                println "✅ 官方映射成功! 已备份: ${backupFile.name}"
+            }
+        } else {
+            println "❌ 官方映射失败: 文件大小异常"
+        }
+    }
+}
+
+// 自定义构建任务
+task buildAndBackup {
+    group = 'build'
+    description = '构建并自动备份到下载目录'
+    
+    doFirst {
+        println "开始构建 ${project.archives_base_name}-${project.version}"
+        println "Java版本: ${JavaVersion.current()}"
+    }
+    
+    doLast {
+        def jarFiles = fileTree(dir: 'build/libs', include: '*.jar')
+        jarFiles.each { jarFile ->
+            if (jarFile.length() > 10000 && !jarFile.name.contains('sources') && !jarFile.name.contains('javadoc')) {
+                def downloadDir = new File("${System.getProperty('user.home')}/storage/downloads")
+                if (downloadDir.exists()) {
+                    def randomSuffix = Long.toHexString(System.currentTimeMillis()).substring(8)
+                    def targetFile = new File(downloadDir, "${project.archives_base_name}-${project.version}-${randomSuffix}.jar")
+                    ant.copy(file: jarFile, tofile: targetFile)
+                    println "✅ 自动备份: ${targetFile.name}"
+                }
+            }
+        }
+    }
+}
+buildAndBackup.dependsOn remapJar
+
+task buildWithOfficial {
+    group = 'build'
+    description = '使用官方映射构建'
+    dependsOn clean, remapJar
+}
+
+// 快速开发构建（不重映射）
+task buildDev {
+    group = 'build'
+    description = '快速开发构建（不重映射）'
+    dependsOn clean, build
+    
+    doLast {
+        def devJar = fileTree(dir: 'build/libs', include: '*dev.jar').singleFile
+        if (devJar.exists() && devJar.length() > 10000) {
+            def downloadDir = new File("${System.getProperty('user.home')}/storage/downloads")
+            if (downloadDir.exists()) {
+                def targetFile = new File(downloadDir, "${project.archives_base_name}-${project.version}-DEV.jar")
+                ant.copy(file: devJar, tofile: targetFile)
+                println "✅ 开发版已复制: ${targetFile.name}"
+            }
+        }
+    }
+}
+
+// 构建验证任务
+task verifyBuild {
+    group = 'verification'
+    description = '验证构建结果'
+    
+    doLast {
+        def jarFiles = fileTree(dir: 'build/libs', include: '*.jar')
+        if (jarFiles.isEmpty()) {
+            println "❌ 未找到任何JAR文件"
+            return
+        }
+        
+        jarFiles.each { jarFile ->
+            println "验证: ${jarFile.name} (${jarFile.length()} bytes)"
+            
+            if (jarFile.length() < 5000) {
+                println "   ❌ 文件大小异常"
+                return
+            }
+            
+            try {
+                def zipFile = new java.util.zip.ZipFile(jarFile)
+                def entries = zipFile.entries()
+                def fileCount = 0
+                def hasFabricMod = false
+                def hasMixins = false
+                def hasClasses = false
+                
+                while (entries.hasMoreElements()) {
+                    def entry = entries.nextElement()
+                    if (!entry.isDirectory()) {
+                        fileCount++
+                        if (entry.name == "fabric.mod.json") hasFabricMod = true
+                        if (entry.name.endsWith(".class")) hasClasses = true
+                        if (entry.name.contains("mixins.json")) hasMixins = true
+                    }
+                }
+                zipFile.close()
+                
+                println "   📁 包含 ${fileCount} 个文件"
+                if (hasFabricMod) println "   ✅ fabric.mod.json"
+                if (hasClasses) println "   ✅ .class 文件"
+                if (hasMixins) println "   ✅ mixin 配置"
+                
+            } catch (Exception e) {
+                println "   ❌ 无法读取JAR文件: ${e.message}"
+            }
+        }
+    }
+}
+
+verifyBuild.dependsOn build
+
+// 清理任务扩展
+task deepClean {
+    group = 'build'
+    description = '深度清理构建文件'
+    
+    doLast {
+        delete(
+            "${project.projectDir}/build_success_backup",
+            "${project.projectDir}/run",
+            "${project.projectDir}/.gradle",
+            "${project.projectDir}/out"
+        )
+        println "✅ 深度清理完成"
+    }
+}
+
+clean.dependsOn deepClean
+
+// 发布配置
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+            artifactId = project.archives_base_name
+            version = project.version
+            
+            pom {
+                name = project.archives_base_name
+                description = 'A Fabric mod for Minecraft 1.20.1'
+                url = 'https://github.com/example/endless_items'
+            }
+        }
+    }    
+    repositories {
+        maven {
+            name = 'local'
+            url = "${project.projectDir}/build/repo"
+        }
+    }
+}

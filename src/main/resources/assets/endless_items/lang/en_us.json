@@ -1,0 +1,12 @@
+{
+  "item.endless_items.simple_sword": "无尽之剑",
+  "block.endless_items.street_block": "街道方块", 
+  "block.endless_items.test_stone": "测试方块",
+  "item.endless_items.street_block": "街道方块",
+  "item.endless_items.test_stone": "测试方块",
+  
+  "itemGroup.endless_items.endless_items": "无尽物品",
+  
+  "key.endless_items.clear_mobs": "清除生物",
+  "category.endless_items": "无尽物品模组"
+}

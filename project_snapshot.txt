@@ -1,0 +1,1336 @@
+=== 项目结构 ===
+./.git/COMMIT_EDITMSG
+./.git/HEAD
+./.git/config
+./.git/description
+./.git/hooks/applypatch-msg.sample
+./.git/hooks/commit-msg.sample
+./.git/hooks/fsmonitor-watchman.sample
+./.git/hooks/post-update.sample
+./.git/hooks/pre-applypatch.sample
+./.git/hooks/pre-commit.sample
+./.git/hooks/pre-merge-commit.sample
+./.git/hooks/pre-push.sample
+./.git/hooks/pre-rebase.sample
+./.git/hooks/pre-receive.sample
+./.git/hooks/prepare-commit-msg.sample
+./.git/hooks/push-to-checkout.sample
+./.git/hooks/sendemail-validate.sample
+./.git/hooks/update.sample
+./.git/index
+./.git/info/exclude
+./.git/logs/HEAD
+./.git/logs/refs/heads/main
+./.git/objects/03/a30739dc55acd8ea4e528d39b9992bdb5fc6eb
+./.git/objects/05/5dfc60c275b904666986c3e281a71712740bca
+./.git/objects/06/5ba093c97c7fb336fe2196add1ae9e49af6107
+./.git/objects/09/7f9f98d9eec50af4ab357b4913aa9bf5a12b0e
+./.git/objects/0c/edacc9a8623d364cff11a016f9aa78f8752c97
+./.git/objects/0f/43c04e744859b959a78446145516c7c6756873
+./.git/objects/0f/6ff821abac8d2b40c0b40e9f963621e7f08793
+./.git/objects/13/062ff732ff518dc5a07a3ef7f4562b60700eff
+./.git/objects/13/2f2467b802d545d5da877c1f2c586e3842b2e2
+./.git/objects/18/49c2777cc4905d5c905b90a06cfca637c9a490
+./.git/objects/1a/a205a1da2cd61d13fb00b2745775d82c4e0c8b
+./.git/objects/1f/4263be8be5f545790e966fad07f019c0420dd7
+./.git/objects/22/44716c23e12a862af0ede462de775865310293
+./.git/objects/22/98e7ce7dd5fdfcf16d9e90c6356c58e64499c3
+./.git/objects/26/03e2698fc775a018e8bdab3fbd51c692ab361b
+./.git/objects/28/913d045648199e61efff6b99af8f56c7d0954b
+./.git/objects/28/b9e00cb5d75dda3451f11773af6801363b1313
+./.git/objects/2a/229c29bf2287d81328cce15ee920cf661384ae
+./.git/objects/2a/53b685e828888a2bb277a097f30f56af6c53b5
+./.git/objects/2a/f6614d6d30e8110924a71d707b372af7b2d7ff
+./.git/objects/2b/e080dbfae8a34baf8db531b0930a74f472d67d
+./.git/objects/2d/b45cb1b5efd92dadb252f31fa75e51a593d12a
+./.git/objects/2e/806c8e939568c6e644039196d591b6a21fb842
+./.git/objects/2f/45d2293a04911875d2055d73ed8b6809a3e98c
+./.git/objects/2f/cfb5c552c45f3b6d18410c509935cc995cdf21
+./.git/objects/31/b117cd26e4e7e0962c6efb36350ce8edc199b1
+./.git/objects/35/a0c3c2b823dbca72e6deae6c948c767ad047e0
+./.git/objects/36/83fdbe7516d7f527f3992be138dddac90e7129
+./.git/objects/37/de77e0d35472c466d486a419fe1c5a8b6e2b61
+./.git/objects/41/1a93e5adf81be791fb1bec7c2d2da99dc24aed
+./.git/objects/44/0cb4fc848903bc7c1756f38b0cf9f14069b7e5
+./.git/objects/48/bda869a1e7cda37fd40b78355493c03bc86387
+./.git/objects/49/fb0dfd8ab24aad0f69174ea9ee9a2924d38048
+./.git/objects/4a/9cd8f886130367698fd7351249b337a961108a
+./.git/objects/56/c46771681983d5c864aa86942eac6a9ab94241
+./.git/objects/59/09b18683b93f9d9665c8d2be6d9d6c5129a33f
+./.git/objects/5c/7913afa98c01b6f22a844ff937ad9d10543980
+./.git/objects/61/e40a9feb3d140cb1b5aeb5d730be3590f678c5
+./.git/objects/69/658e465a2960880961bf9afa6d09ad641df0fa
+./.git/objects/6b/80f534dfcfb6d13ef2807df142e8e6fc9d0dfc
+./.git/objects/6b/a1471f781698cb4409028a445b7ccaad1acae0
+./.git/objects/6b/a88271edc4dc55836090cba4384a3ffd3835b4
+./.git/objects/6f/92099a537846dc68875bf0caab4bff09215d20
+./.git/objects/70/1ff5aed07b430bec1df879a8ab3208648a6a38
+./.git/objects/73/cce7d6a8a3a9394a88da9bc3eac7ff1e90bab5
+./.git/objects/74/202edd619ac7553fea564b0fdb7bf49af230ba
+./.git/objects/75/c4d726aca9033faf6b7c735ccff846d5d362ef
+./.git/objects/79/05099cd3378f54dce87e4872337cc1df5b8777
+./.git/objects/7b/c295abef35d886f514c5ff460f563a8c247302
+./.git/objects/81/9de6746d86a7ddd4f29d91ef4adc62a34ed648
+./.git/objects/87/1a267f4796f23388d1d2a6bb5f1357f4ec0a10
+./.git/objects/8d/1406a2c34b50a4e250cd0b5bbd9a93cfeeec36
+./.git/objects/8d/4bee8946ca55e68ecae450030e6b3e63eae01a
+./.git/objects/94/42bd0a009731a646b58289d78d4297b87c054a
+./.git/objects/94/fb21d507ba79f3943bfef59a00cb964b84ea58
+./.git/objects/95/b7eaef6aec359587d4f2e11c2154aca02af2fe
+./.git/objects/96/d25f92fa61615460dc462117d2da951aeca139
+./.git/objects/9c/3ae9e17d318f4c82876a24dfd7421ac46150da
+./.git/objects/9d/21a21834d5195c278ba17baec3115b2aaab06e
+./.git/objects/9e/0dddf7f07fa27851aafb6a7e21e5aeb31fc0b5
+./.git/objects/a4/8417672c60ae66344c5abce4cb6e43cd96566d
+./.git/objects/a4/b76b9530d66f5e68d973ea569d8e19de379189
+./.git/objects/a5/2b3b50430b01228b0e939727618358f0d85054
+./.git/objects/ad/d6fe1e2aabfd2a04a8c387f485c99fdaf427ec
+./.git/objects/b3/56406fce8d1e96882c6d7e18cbf30a0ae7df36
+./.git/objects/b6/7d4b5a204294002a8617376672344e422b2311
+./.git/objects/b8/d5b213440fea24521bb2efe335dc5afd3c1fde
+./.git/objects/ba/3bac5dae35fd9dfd64d88bf9c0d3a4500e3ec6
+./.git/objects/be/e23de367de2a8cdfda85656525c2a5e1722b83
+./.git/objects/c4/76faf29768eb2383b6f8d4abb9691aec0a45d6
+./.git/objects/c5/0c38c9678517cfe8bd316ccdb47d632050cddb
+./.git/objects/ca/f0ac5af173fc8ce06e3dc01f4a1fdfd186e5d0
+./.git/objects/cb/95a81e52e63f3dc1b66aa567e124a1adfdd5c6
+./.git/objects/d0/80972cc75c1a55a5e197de98a688a3de4f0bb0
+./.git/objects/d5/3aa25c6ab34130f73b2297a17bf5864e17aa6e
+./.git/objects/d6/e432f25b5a41d5d7eaac15356473f1352dc3d3
+./.git/objects/d7/5f333d7c28126ae2967071617c2439a32e0c32
+./.git/objects/d9/1c931bfb677536ba1f71f50751b3ffdb8fcfc8
+./.git/objects/d9/b8c94a2ea68e6e59d0c81369776a3b2604d63e
+./.git/objects/d9/f308e791552c5627bfa0de5890031d2589309d
+./.git/objects/dd/7fb287010a4e46e1bd2fc3efe03fa7abd91945
+./.git/objects/dd/849a5459a29f34a2e3be6dc63d2d6666b79288
+./.git/objects/dd/b05175fbf7d1dadf55f2dddcc779c8e510de36
+./.git/objects/dd/ea19f690393c52c8855a22a3f320f752055a67
+./.git/objects/e2/eba305b7118926ed8323204473a9dfb6dd103e
+./.git/objects/e3/91b55017a5c726d0ecd6040763758084ac6ea9
+./.git/objects/e5/3568eb9087731f06a93e5bdf7253ee604db58b
+./.git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+./.git/objects/e6/ff5b0f387446855216e80d42e2bb2be8dda133
+./.git/objects/e9/006a770893a7dd0e06840a518244f2e6b4bbee
+./.git/objects/ea/e19b80c44d87c67afbf8425fc87a8c7f61e912
+./.git/objects/eb/376728bb78650aab3175bb5a7bf674ebe49dfc
+./.git/objects/ed/6bc7d2112e73db54f275b54f640226ec5c0ca5
+./.git/objects/ee/3a08907b4b6b96ff3a0ef84ce12eeb09611cf7
+./.git/objects/f0/33d9a903722507661f4fd290ecd2fe2778aa07
+./.git/objects/f0/fe2952c32a9cbed886088402756b91f300ed0c
+./.git/objects/f3/8f63d7d0f7ac629c2112af73c6e52548c720eb
+./.git/objects/f3/b75f3b0d4faeb4b1c8a02b5c47007e6efb7dcd
+./.git/objects/f4/50803b9874c0046f26abd355efa4f8f4d23734
+./.git/objects/f5/c15347a3937f9889262d6d58efd8f7bbf467bc
+./.git/objects/f7/ba98d58ae7d4832392892c7f0a903ef10c6c94
+./.git/objects/fb/f21d1a9f1c2ae12f332b0d2d460942ddbb7255
+./.git/objects/fe/2b0ec9a66b6d3cc0a6c47a250746bb3663041a
+./.git/objects/ff/b4c53960614c03a6cb9271e8f8864e936a3ae4
+./.git/refs/heads/main
+./.gitattributes
+./.github/workflows/build.yml
+./.gitignore
+./.gradle/8.12.1/checksums/checksums.lock
+./.gradle/8.12.1/checksums/md5-checksums.bin
+./.gradle/8.12.1/checksums/sha1-checksums.bin
+./.gradle/8.12.1/executionHistory/executionHistory.bin
+./.gradle/8.12.1/executionHistory/executionHistory.lock
+./.gradle/8.12.1/expanded/expanded.lock
+./.gradle/8.12.1/fileChanges/last-build.bin
+./.gradle/8.12.1/fileHashes/fileHashes.bin
+./.gradle/8.12.1/fileHashes/fileHashes.lock
+./.gradle/8.12.1/fileHashes/resourceHashesCache.bin
+./.gradle/8.12.1/gc.properties
+./.gradle/buildOutputCleanup/buildOutputCleanup.lock
+./.gradle/buildOutputCleanup/cache.properties
+./.gradle/buildOutputCleanup/outputFiles.bin
+./.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-clientonly-project-root/1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2/minecraft-clientonly-project-root-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar
+./.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-clientonly-project-root/1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2/minecraft-clientonly-project-root-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.pom
+./.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-common-project-root/1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2/minecraft-common-project-root-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar
+./.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-common-project-root/1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2/minecraft-common-project-root-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.pom
+./.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-project-root/1.20.1-loom.mappings.1_20_1.layered+hash.2198-v2/minecraft-merged-project-root-1.20.1-loom.mappings.1_20_1.layered+hash.2198-v2-sources.jar
+./.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-project-root/1.20.1-loom.mappings.1_20_1.layered+hash.2198-v2/minecraft-merged-project-root-1.20.1-loom.mappings.1_20_1.layered+hash.2198-v2.jar
+./.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-project-root/1.20.1-loom.mappings.1_20_1.layered+hash.2198-v2/minecraft-merged-project-root-1.20.1-loom.mappings.1_20_1.layered+hash.2198-v2.pom
+./.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-project-root/1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2/minecraft-merged-project-root-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.jar
+./.gradle/loom-cache/minecraftMaven/net/minecraft/minecraft-merged-project-root/1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2/minecraft-merged-project-root-1.20.1-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-api-base/0.4.30+7abfd51577/fabric-api-base-0.4.30+7abfd51577-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-api-base/0.4.30+7abfd51577/fabric-api-base-0.4.30+7abfd51577.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-api-base/0.4.30+7abfd51577/fabric-api-base-0.4.30+7abfd51577.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-api-base/0.4.32+1802ada577/fabric-api-base-0.4.32+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-api-base/0.4.32+1802ada577/fabric-api-base-0.4.32+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-api-base/0.4.32+1802ada577/fabric-api-base-0.4.32+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-api-lookup-api-v1/1.6.35+4d8536c977/fabric-api-lookup-api-v1-1.6.35+4d8536c977-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-api-lookup-api-v1/1.6.35+4d8536c977/fabric-api-lookup-api-v1-1.6.35+4d8536c977.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-api-lookup-api-v1/1.6.35+4d8536c977/fabric-api-lookup-api-v1-1.6.35+4d8536c977.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-api-lookup-api-v1/1.6.37+1802ada577/fabric-api-lookup-api-v1-1.6.37+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-api-lookup-api-v1/1.6.37+1802ada577/fabric-api-lookup-api-v1-1.6.37+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-api-lookup-api-v1/1.6.37+1802ada577/fabric-api-lookup-api-v1-1.6.37+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-api/0.87.0+1.20.1/fabric-api-0.87.0+1.20.1-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-api/0.87.0+1.20.1/fabric-api-0.87.0+1.20.1.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-api/0.87.0+1.20.1/fabric-api-0.87.0+1.20.1.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-api/0.92.5+1.20.1/fabric-api-0.92.5+1.20.1-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-api/0.92.5+1.20.1/fabric-api-0.92.5+1.20.1.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-api/0.92.5+1.20.1/fabric-api-0.92.5+1.20.1.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-biome-api-v1/13.0.10+b3afc78b77/fabric-biome-api-v1-13.0.10+b3afc78b77-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-biome-api-v1/13.0.10+b3afc78b77/fabric-biome-api-v1-13.0.10+b3afc78b77.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-biome-api-v1/13.0.10+b3afc78b77/fabric-biome-api-v1-13.0.10+b3afc78b77.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-biome-api-v1/13.0.14+1802ada577/fabric-biome-api-v1-13.0.14+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-biome-api-v1/13.0.14+1802ada577/fabric-biome-api-v1-13.0.14+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-biome-api-v1/13.0.14+1802ada577/fabric-biome-api-v1-13.0.14+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-block-api-v1/1.0.12+1802ada577/fabric-block-api-v1-1.0.12+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-block-api-v1/1.0.12+1802ada577/fabric-block-api-v1-1.0.12+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-block-api-v1/1.0.12+1802ada577/fabric-block-api-v1-1.0.12+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-block-api-v1/1.0.9+e022e5d177/fabric-block-api-v1-1.0.9+e022e5d177-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-block-api-v1/1.0.9+e022e5d177/fabric-block-api-v1-1.0.9+e022e5d177.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-block-api-v1/1.0.9+e022e5d177/fabric-block-api-v1-1.0.9+e022e5d177.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-block-view-api-v2/1.0.3+924f046a77/fabric-block-view-api-v2-1.0.3+924f046a77-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-block-view-api-v2/1.0.3+924f046a77/fabric-block-view-api-v2-1.0.3+924f046a77.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-block-view-api-v2/1.0.3+924f046a77/fabric-block-view-api-v2-1.0.3+924f046a77.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-blockrenderlayer-v1/1.1.40+b3afc78b77/fabric-blockrenderlayer-v1-1.1.40+b3afc78b77-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-blockrenderlayer-v1/1.1.40+b3afc78b77/fabric-blockrenderlayer-v1-1.1.40+b3afc78b77.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-blockrenderlayer-v1/1.1.40+b3afc78b77/fabric-blockrenderlayer-v1-1.1.40+b3afc78b77.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-blockrenderlayer-v1/1.1.42+1802ada577/fabric-blockrenderlayer-v1-1.1.42+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-blockrenderlayer-v1/1.1.42+1802ada577/fabric-blockrenderlayer-v1-1.1.42+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-blockrenderlayer-v1/1.1.42+1802ada577/fabric-blockrenderlayer-v1-1.1.42+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-client-tags-api-v1/1.1.1+97bb207577/fabric-client-tags-api-v1-1.1.1+97bb207577-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-client-tags-api-v1/1.1.1+97bb207577/fabric-client-tags-api-v1-1.1.1+97bb207577.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-client-tags-api-v1/1.1.1+97bb207577/fabric-client-tags-api-v1-1.1.1+97bb207577.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-client-tags-api-v1/1.1.3+1802ada577/fabric-client-tags-api-v1-1.1.3+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-client-tags-api-v1/1.1.3+1802ada577/fabric-client-tags-api-v1-1.1.3+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-client-tags-api-v1/1.1.3+1802ada577/fabric-client-tags-api-v1-1.1.3+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-command-api-v1/1.2.33+f71b366f77/fabric-command-api-v1-1.2.33+f71b366f77-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-command-api-v1/1.2.33+f71b366f77/fabric-command-api-v1-1.2.33+f71b366f77.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-command-api-v1/1.2.33+f71b366f77/fabric-command-api-v1-1.2.33+f71b366f77.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-command-api-v1/1.2.35+f71b366f77/fabric-command-api-v1-1.2.35+f71b366f77-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-command-api-v1/1.2.35+f71b366f77/fabric-command-api-v1-1.2.35+f71b366f77.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-command-api-v1/1.2.35+f71b366f77/fabric-command-api-v1-1.2.35+f71b366f77.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-command-api-v2/2.2.12+b3afc78b77/fabric-command-api-v2-2.2.12+b3afc78b77-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-command-api-v2/2.2.12+b3afc78b77/fabric-command-api-v2-2.2.12+b3afc78b77.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-command-api-v2/2.2.12+b3afc78b77/fabric-command-api-v2-2.2.12+b3afc78b77.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-command-api-v2/2.2.14+1802ada577/fabric-command-api-v2-2.2.14+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-command-api-v2/2.2.14+1802ada577/fabric-command-api-v2-2.2.14+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-command-api-v2/2.2.14+1802ada577/fabric-command-api-v2-2.2.14+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-commands-v0/0.2.50+df3654b377/fabric-commands-v0-0.2.50+df3654b377-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-commands-v0/0.2.50+df3654b377/fabric-commands-v0-0.2.50+df3654b377.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-commands-v0/0.2.50+df3654b377/fabric-commands-v0-0.2.50+df3654b377.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-commands-v0/0.2.52+df3654b377/fabric-commands-v0-0.2.52+df3654b377-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-commands-v0/0.2.52+df3654b377/fabric-commands-v0-0.2.52+df3654b377.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-commands-v0/0.2.52+df3654b377/fabric-commands-v0-0.2.52+df3654b377.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-containers-v0/0.1.63+df3654b377/fabric-containers-v0-0.1.63+df3654b377-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-containers-v0/0.1.63+df3654b377/fabric-containers-v0-0.1.63+df3654b377.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-containers-v0/0.1.63+df3654b377/fabric-containers-v0-0.1.63+df3654b377.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-containers-v0/0.1.66+df3654b377/fabric-containers-v0-0.1.66+df3654b377-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-containers-v0/0.1.66+df3654b377/fabric-containers-v0-0.1.66+df3654b377.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-containers-v0/0.1.66+df3654b377/fabric-containers-v0-0.1.66+df3654b377.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-content-registries-v0/4.0.13+1802ada577/fabric-content-registries-v0-4.0.13+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-content-registries-v0/4.0.13+1802ada577/fabric-content-registries-v0-4.0.13+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-content-registries-v0/4.0.13+1802ada577/fabric-content-registries-v0-4.0.13+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-content-registries-v0/4.0.9+b3afc78b77/fabric-content-registries-v0-4.0.9+b3afc78b77-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-content-registries-v0/4.0.9+b3afc78b77/fabric-content-registries-v0-4.0.9+b3afc78b77.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-content-registries-v0/4.0.9+b3afc78b77/fabric-content-registries-v0-4.0.9+b3afc78b77.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-convention-tags-v1/1.5.4+a1a980da77/fabric-convention-tags-v1-1.5.4+a1a980da77-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-convention-tags-v1/1.5.4+a1a980da77/fabric-convention-tags-v1-1.5.4+a1a980da77.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-convention-tags-v1/1.5.4+a1a980da77/fabric-convention-tags-v1-1.5.4+a1a980da77.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-convention-tags-v1/1.5.6+1802ada577/fabric-convention-tags-v1-1.5.6+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-convention-tags-v1/1.5.6+1802ada577/fabric-convention-tags-v1-1.5.6+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-convention-tags-v1/1.5.6+1802ada577/fabric-convention-tags-v1-1.5.6+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-crash-report-info-v1/0.2.18+aeb40ebe77/fabric-crash-report-info-v1-0.2.18+aeb40ebe77-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-crash-report-info-v1/0.2.18+aeb40ebe77/fabric-crash-report-info-v1-0.2.18+aeb40ebe77.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-crash-report-info-v1/0.2.18+aeb40ebe77/fabric-crash-report-info-v1-0.2.18+aeb40ebe77.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-crash-report-info-v1/0.2.20+1802ada577/fabric-crash-report-info-v1-0.2.20+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-crash-report-info-v1/0.2.20+1802ada577/fabric-crash-report-info-v1-0.2.20+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-crash-report-info-v1/0.2.20+1802ada577/fabric-crash-report-info-v1-0.2.20+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-data-attachment-api-v1/1.0.2+de0fd6d177/fabric-data-attachment-api-v1-1.0.2+de0fd6d177-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-data-attachment-api-v1/1.0.2+de0fd6d177/fabric-data-attachment-api-v1-1.0.2+de0fd6d177.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-data-attachment-api-v1/1.0.2+de0fd6d177/fabric-data-attachment-api-v1-1.0.2+de0fd6d177.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-data-generation-api-v1/12.2.2+1e61dba177/fabric-data-generation-api-v1-12.2.2+1e61dba177-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-data-generation-api-v1/12.2.2+1e61dba177/fabric-data-generation-api-v1-12.2.2+1e61dba177.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-data-generation-api-v1/12.2.2+1e61dba177/fabric-data-generation-api-v1-12.2.2+1e61dba177.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-data-generation-api-v1/12.3.6+1802ada577/fabric-data-generation-api-v1-12.3.6+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-data-generation-api-v1/12.3.6+1802ada577/fabric-data-generation-api-v1-12.3.6+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-data-generation-api-v1/12.3.6+1802ada577/fabric-data-generation-api-v1-12.3.6+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-dimensions-v1/2.1.53+8536527b77/fabric-dimensions-v1-2.1.53+8536527b77-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-dimensions-v1/2.1.53+8536527b77/fabric-dimensions-v1-2.1.53+8536527b77.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-dimensions-v1/2.1.53+8536527b77/fabric-dimensions-v1-2.1.53+8536527b77.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-dimensions-v1/2.1.55+1802ada577/fabric-dimensions-v1-2.1.55+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-dimensions-v1/2.1.55+1802ada577/fabric-dimensions-v1-2.1.55+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-dimensions-v1/2.1.55+1802ada577/fabric-dimensions-v1-2.1.55+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-entity-events-v1/1.5.22+b3afc78b77/fabric-entity-events-v1-1.5.22+b3afc78b77-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-entity-events-v1/1.5.22+b3afc78b77/fabric-entity-events-v1-1.5.22+b3afc78b77.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-entity-events-v1/1.5.22+b3afc78b77/fabric-entity-events-v1-1.5.22+b3afc78b77.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-entity-events-v1/1.6.1+1c78457f77/fabric-entity-events-v1-1.6.1+1c78457f77-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-entity-events-v1/1.6.1+1c78457f77/fabric-entity-events-v1-1.6.1+1c78457f77.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-entity-events-v1/1.6.1+1c78457f77/fabric-entity-events-v1-1.6.1+1c78457f77.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-events-interaction-v0/0.6.1+e91849a877/fabric-events-interaction-v0-0.6.1+e91849a877-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-events-interaction-v0/0.6.1+e91849a877/fabric-events-interaction-v0-0.6.1+e91849a877.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-events-interaction-v0/0.6.1+e91849a877/fabric-events-interaction-v0-0.6.1+e91849a877.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-events-interaction-v0/0.6.4+13a40c6677/fabric-events-interaction-v0-0.6.4+13a40c6677-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-events-interaction-v0/0.6.4+13a40c6677/fabric-events-interaction-v0-0.6.4+13a40c6677.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-events-interaction-v0/0.6.4+13a40c6677/fabric-events-interaction-v0-0.6.4+13a40c6677.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-events-lifecycle-v0/0.2.62+df3654b377/fabric-events-lifecycle-v0-0.2.62+df3654b377-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-events-lifecycle-v0/0.2.62+df3654b377/fabric-events-lifecycle-v0-0.2.62+df3654b377.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-events-lifecycle-v0/0.2.62+df3654b377/fabric-events-lifecycle-v0-0.2.62+df3654b377.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-events-lifecycle-v0/0.2.64+df3654b377/fabric-events-lifecycle-v0-0.2.64+df3654b377-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-events-lifecycle-v0/0.2.64+df3654b377/fabric-events-lifecycle-v0-0.2.64+df3654b377.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-events-lifecycle-v0/0.2.64+df3654b377/fabric-events-lifecycle-v0-0.2.64+df3654b377.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-game-rule-api-v1/1.0.38+b04edc7a77/fabric-game-rule-api-v1-1.0.38+b04edc7a77-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-game-rule-api-v1/1.0.38+b04edc7a77/fabric-game-rule-api-v1-1.0.38+b04edc7a77.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-game-rule-api-v1/1.0.38+b04edc7a77/fabric-game-rule-api-v1-1.0.38+b04edc7a77.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-game-rule-api-v1/1.0.41+1802ada577/fabric-game-rule-api-v1-1.0.41+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-game-rule-api-v1/1.0.41+1802ada577/fabric-game-rule-api-v1-1.0.41+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-game-rule-api-v1/1.0.41+1802ada577/fabric-game-rule-api-v1-1.0.41+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-gametest-api-v1/1.2.12+b3afc78b77/fabric-gametest-api-v1-1.2.12+b3afc78b77-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-gametest-api-v1/1.2.12+b3afc78b77/fabric-gametest-api-v1-1.2.12+b3afc78b77.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-gametest-api-v1/1.2.12+b3afc78b77/fabric-gametest-api-v1-1.2.12+b3afc78b77.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-gametest-api-v1/1.2.15+1802ada577/fabric-gametest-api-v1-1.2.15+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-gametest-api-v1/1.2.15+1802ada577/fabric-gametest-api-v1-1.2.15+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-gametest-api-v1/1.2.15+1802ada577/fabric-gametest-api-v1-1.2.15+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-item-api-v1/2.1.27+b3afc78b77/fabric-item-api-v1-2.1.27+b3afc78b77-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-item-api-v1/2.1.27+b3afc78b77/fabric-item-api-v1-2.1.27+b3afc78b77.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-item-api-v1/2.1.27+b3afc78b77/fabric-item-api-v1-2.1.27+b3afc78b77.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-item-api-v1/2.1.29+1802ada577/fabric-item-api-v1-2.1.29+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-item-api-v1/2.1.29+1802ada577/fabric-item-api-v1-2.1.29+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-item-api-v1/2.1.29+1802ada577/fabric-item-api-v1-2.1.29+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-item-group-api-v1/4.0.10+23d9108177/fabric-item-group-api-v1-4.0.10+23d9108177-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-item-group-api-v1/4.0.10+23d9108177/fabric-item-group-api-v1-4.0.10+23d9108177.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-item-group-api-v1/4.0.10+23d9108177/fabric-item-group-api-v1-4.0.10+23d9108177.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-item-group-api-v1/4.0.14+1802ada577/fabric-item-group-api-v1-4.0.14+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-item-group-api-v1/4.0.14+1802ada577/fabric-item-group-api-v1-4.0.14+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-item-group-api-v1/4.0.14+1802ada577/fabric-item-group-api-v1-4.0.14+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-key-binding-api-v1/1.0.36+fb8d95da77/fabric-key-binding-api-v1-1.0.36+fb8d95da77-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-key-binding-api-v1/1.0.36+fb8d95da77/fabric-key-binding-api-v1-1.0.36+fb8d95da77.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-key-binding-api-v1/1.0.36+fb8d95da77/fabric-key-binding-api-v1-1.0.36+fb8d95da77.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-key-binding-api-v1/1.0.38+1802ada577/fabric-key-binding-api-v1-1.0.38+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-key-binding-api-v1/1.0.38+1802ada577/fabric-key-binding-api-v1-1.0.38+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-key-binding-api-v1/1.0.38+1802ada577/fabric-key-binding-api-v1-1.0.38+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-keybindings-v0/0.2.34+df3654b377/fabric-keybindings-v0-0.2.34+df3654b377-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-keybindings-v0/0.2.34+df3654b377/fabric-keybindings-v0-0.2.34+df3654b377.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-keybindings-v0/0.2.34+df3654b377/fabric-keybindings-v0-0.2.34+df3654b377.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-keybindings-v0/0.2.36+df3654b377/fabric-keybindings-v0-0.2.36+df3654b377-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-keybindings-v0/0.2.36+df3654b377/fabric-keybindings-v0-0.2.36+df3654b377.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-keybindings-v0/0.2.36+df3654b377/fabric-keybindings-v0-0.2.36+df3654b377.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-lifecycle-events-v1/2.2.21+b3afc78b77/fabric-lifecycle-events-v1-2.2.21+b3afc78b77-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-lifecycle-events-v1/2.2.21+b3afc78b77/fabric-lifecycle-events-v1-2.2.21+b3afc78b77.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-lifecycle-events-v1/2.2.21+b3afc78b77/fabric-lifecycle-events-v1-2.2.21+b3afc78b77.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-lifecycle-events-v1/2.2.23+1802ada577/fabric-lifecycle-events-v1-2.2.23+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-lifecycle-events-v1/2.2.23+1802ada577/fabric-lifecycle-events-v1-2.2.23+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-lifecycle-events-v1/2.2.23+1802ada577/fabric-lifecycle-events-v1-2.2.23+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-loot-api-v2/1.1.39+b3afc78b77/fabric-loot-api-v2-1.1.39+b3afc78b77-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-loot-api-v2/1.1.39+b3afc78b77/fabric-loot-api-v2-1.1.39+b3afc78b77.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-loot-api-v2/1.1.39+b3afc78b77/fabric-loot-api-v2-1.1.39+b3afc78b77.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-loot-api-v2/1.2.3+1802ada577/fabric-loot-api-v2-1.2.3+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-loot-api-v2/1.2.3+1802ada577/fabric-loot-api-v2-1.2.3+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-loot-api-v2/1.2.3+1802ada577/fabric-loot-api-v2-1.2.3+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-loot-tables-v1/1.1.43+9e7660c677/fabric-loot-tables-v1-1.1.43+9e7660c677-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-loot-tables-v1/1.1.43+9e7660c677/fabric-loot-tables-v1-1.1.43+9e7660c677.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-loot-tables-v1/1.1.43+9e7660c677/fabric-loot-tables-v1-1.1.43+9e7660c677.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-loot-tables-v1/1.1.47+9e7660c677/fabric-loot-tables-v1-1.1.47+9e7660c677-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-loot-tables-v1/1.1.47+9e7660c677/fabric-loot-tables-v1-1.1.47+9e7660c677.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-loot-tables-v1/1.1.47+9e7660c677/fabric-loot-tables-v1-1.1.47+9e7660c677.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-message-api-v1/5.1.10+1802ada577/fabric-message-api-v1-5.1.10+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-message-api-v1/5.1.10+1802ada577/fabric-message-api-v1-5.1.10+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-message-api-v1/5.1.10+1802ada577/fabric-message-api-v1-5.1.10+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-message-api-v1/5.1.7+3265161977/fabric-message-api-v1-5.1.7+3265161977-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-message-api-v1/5.1.7+3265161977/fabric-message-api-v1-5.1.7+3265161977.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-message-api-v1/5.1.7+3265161977/fabric-message-api-v1-5.1.7+3265161977.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-mining-level-api-v1/2.1.49+b3afc78b77/fabric-mining-level-api-v1-2.1.49+b3afc78b77-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-mining-level-api-v1/2.1.49+b3afc78b77/fabric-mining-level-api-v1-2.1.49+b3afc78b77.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-mining-level-api-v1/2.1.49+b3afc78b77/fabric-mining-level-api-v1-2.1.49+b3afc78b77.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-mining-level-api-v1/2.1.52+1802ada577/fabric-mining-level-api-v1-2.1.52+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-mining-level-api-v1/2.1.52+1802ada577/fabric-mining-level-api-v1-2.1.52+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-mining-level-api-v1/2.1.52+1802ada577/fabric-mining-level-api-v1-2.1.52+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-model-loading-api-v1/1.0.2+709a987177/fabric-model-loading-api-v1-1.0.2+709a987177-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-model-loading-api-v1/1.0.2+709a987177/fabric-model-loading-api-v1-1.0.2+709a987177.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-model-loading-api-v1/1.0.2+709a987177/fabric-model-loading-api-v1-1.0.2+709a987177.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-model-loading-api-v1/1.0.4+1802ada577/fabric-model-loading-api-v1-1.0.4+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-model-loading-api-v1/1.0.4+1802ada577/fabric-model-loading-api-v1-1.0.4+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-model-loading-api-v1/1.0.4+1802ada577/fabric-model-loading-api-v1-1.0.4+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-models-v0/0.4.1+9386d8a777/fabric-models-v0-0.4.1+9386d8a777-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-models-v0/0.4.1+9386d8a777/fabric-models-v0-0.4.1+9386d8a777.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-models-v0/0.4.1+9386d8a777/fabric-models-v0-0.4.1+9386d8a777.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-models-v0/0.4.3+9386d8a777/fabric-models-v0-0.4.3+9386d8a777-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-models-v0/0.4.3+9386d8a777/fabric-models-v0-0.4.3+9386d8a777.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-models-v0/0.4.3+9386d8a777/fabric-models-v0-0.4.3+9386d8a777.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-networking-api-v1/1.3.10+eeb8eb3677/fabric-networking-api-v1-1.3.10+eeb8eb3677-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-networking-api-v1/1.3.10+eeb8eb3677/fabric-networking-api-v1-1.3.10+eeb8eb3677.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-networking-api-v1/1.3.10+eeb8eb3677/fabric-networking-api-v1-1.3.10+eeb8eb3677.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-networking-api-v1/1.3.13+13a40c6677/fabric-networking-api-v1-1.3.13+13a40c6677-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-networking-api-v1/1.3.13+13a40c6677/fabric-networking-api-v1-1.3.13+13a40c6677.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-networking-api-v1/1.3.13+13a40c6677/fabric-networking-api-v1-1.3.13+13a40c6677.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-networking-v0/0.3.50+df3654b377/fabric-networking-v0-0.3.50+df3654b377-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-networking-v0/0.3.50+df3654b377/fabric-networking-v0-0.3.50+df3654b377.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-networking-v0/0.3.50+df3654b377/fabric-networking-v0-0.3.50+df3654b377.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-networking-v0/0.3.53+df3654b377/fabric-networking-v0-0.3.53+df3654b377-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-networking-v0/0.3.53+df3654b377/fabric-networking-v0-0.3.53+df3654b377.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-networking-v0/0.3.53+df3654b377/fabric-networking-v0-0.3.53+df3654b377.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-object-builder-api-v1/11.1.1+6beca84877/fabric-object-builder-api-v1-11.1.1+6beca84877-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-object-builder-api-v1/11.1.1+6beca84877/fabric-object-builder-api-v1-11.1.1+6beca84877.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-object-builder-api-v1/11.1.1+6beca84877/fabric-object-builder-api-v1-11.1.1+6beca84877.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-object-builder-api-v1/11.1.5+e35120df77/fabric-object-builder-api-v1-11.1.5+e35120df77-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-object-builder-api-v1/11.1.5+e35120df77/fabric-object-builder-api-v1-11.1.5+e35120df77.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-object-builder-api-v1/11.1.5+e35120df77/fabric-object-builder-api-v1-11.1.5+e35120df77.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-particles-v1/1.1.1+201a23a077/fabric-particles-v1-1.1.1+201a23a077-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-particles-v1/1.1.1+201a23a077/fabric-particles-v1-1.1.1+201a23a077.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-particles-v1/1.1.1+201a23a077/fabric-particles-v1-1.1.1+201a23a077.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-particles-v1/1.1.3+1802ada577/fabric-particles-v1-1.1.3+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-particles-v1/1.1.3+1802ada577/fabric-particles-v1-1.1.3+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-particles-v1/1.1.3+1802ada577/fabric-particles-v1-1.1.3+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-recipe-api-v1/1.0.20+b3afc78b77/fabric-recipe-api-v1-1.0.20+b3afc78b77-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-recipe-api-v1/1.0.20+b3afc78b77/fabric-recipe-api-v1-1.0.20+b3afc78b77.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-recipe-api-v1/1.0.20+b3afc78b77/fabric-recipe-api-v1-1.0.20+b3afc78b77.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-recipe-api-v1/1.0.23+1802ada577/fabric-recipe-api-v1-1.0.23+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-recipe-api-v1/1.0.23+1802ada577/fabric-recipe-api-v1-1.0.23+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-recipe-api-v1/1.0.23+1802ada577/fabric-recipe-api-v1-1.0.23+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-registry-sync-v0/2.3.2+4df89eb277/fabric-registry-sync-v0-2.3.2+4df89eb277-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-registry-sync-v0/2.3.2+4df89eb277/fabric-registry-sync-v0-2.3.2+4df89eb277.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-registry-sync-v0/2.3.2+4df89eb277/fabric-registry-sync-v0-2.3.2+4df89eb277.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-registry-sync-v0/2.3.5+1802ada577/fabric-registry-sync-v0-2.3.5+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-registry-sync-v0/2.3.5+1802ada577/fabric-registry-sync-v0-2.3.5+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-registry-sync-v0/2.3.5+1802ada577/fabric-registry-sync-v0-2.3.5+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-renderer-api-v1/3.1.2+6bdb2ed077/fabric-renderer-api-v1-3.1.2+6bdb2ed077-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-renderer-api-v1/3.1.2+6bdb2ed077/fabric-renderer-api-v1-3.1.2+6bdb2ed077.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-renderer-api-v1/3.1.2+6bdb2ed077/fabric-renderer-api-v1-3.1.2+6bdb2ed077.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-renderer-api-v1/3.2.2+1802ada577/fabric-renderer-api-v1-3.2.2+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-renderer-api-v1/3.2.2+1802ada577/fabric-renderer-api-v1-3.2.2+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-renderer-api-v1/3.2.2+1802ada577/fabric-renderer-api-v1-3.2.2+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-renderer-indigo/1.4.2+6bdb2ed077/fabric-renderer-indigo-1.4.2+6bdb2ed077-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-renderer-indigo/1.4.2+6bdb2ed077/fabric-renderer-indigo-1.4.2+6bdb2ed077.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-renderer-indigo/1.4.2+6bdb2ed077/fabric-renderer-indigo-1.4.2+6bdb2ed077.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-renderer-indigo/1.5.3+85287f9f77/fabric-renderer-indigo-1.5.3+85287f9f77-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-renderer-indigo/1.5.3+85287f9f77/fabric-renderer-indigo-1.5.3+85287f9f77.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-renderer-indigo/1.5.3+85287f9f77/fabric-renderer-indigo-1.5.3+85287f9f77.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-renderer-registries-v1/3.2.45+df3654b377/fabric-renderer-registries-v1-3.2.45+df3654b377-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-renderer-registries-v1/3.2.45+df3654b377/fabric-renderer-registries-v1-3.2.45+df3654b377.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-renderer-registries-v1/3.2.45+df3654b377/fabric-renderer-registries-v1-3.2.45+df3654b377.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-renderer-registries-v1/3.2.47+df3654b377/fabric-renderer-registries-v1-3.2.47+df3654b377-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-renderer-registries-v1/3.2.47+df3654b377/fabric-renderer-registries-v1-3.2.47+df3654b377.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-renderer-registries-v1/3.2.47+df3654b377/fabric-renderer-registries-v1-3.2.47+df3654b377.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-rendering-data-attachment-v1/0.3.34+b3afc78b77/fabric-rendering-data-attachment-v1-0.3.34+b3afc78b77-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-rendering-data-attachment-v1/0.3.34+b3afc78b77/fabric-rendering-data-attachment-v1-0.3.34+b3afc78b77.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-rendering-data-attachment-v1/0.3.34+b3afc78b77/fabric-rendering-data-attachment-v1-0.3.34+b3afc78b77.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-rendering-data-attachment-v1/0.3.39+92a0d36777/fabric-rendering-data-attachment-v1-0.3.39+92a0d36777-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-rendering-data-attachment-v1/0.3.39+92a0d36777/fabric-rendering-data-attachment-v1-0.3.39+92a0d36777.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-rendering-data-attachment-v1/0.3.39+92a0d36777/fabric-rendering-data-attachment-v1-0.3.39+92a0d36777.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-rendering-fluids-v1/3.0.27+b3afc78b77/fabric-rendering-fluids-v1-3.0.27+b3afc78b77-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-rendering-fluids-v1/3.0.27+b3afc78b77/fabric-rendering-fluids-v1-3.0.27+b3afc78b77.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-rendering-fluids-v1/3.0.27+b3afc78b77/fabric-rendering-fluids-v1-3.0.27+b3afc78b77.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-rendering-fluids-v1/3.0.29+1802ada577/fabric-rendering-fluids-v1-3.0.29+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-rendering-fluids-v1/3.0.29+1802ada577/fabric-rendering-fluids-v1-3.0.29+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-rendering-fluids-v1/3.0.29+1802ada577/fabric-rendering-fluids-v1-3.0.29+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-rendering-v0/1.1.48+df3654b377/fabric-rendering-v0-1.1.48+df3654b377-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-rendering-v0/1.1.48+df3654b377/fabric-rendering-v0-1.1.48+df3654b377.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-rendering-v0/1.1.48+df3654b377/fabric-rendering-v0-1.1.48+df3654b377.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-rendering-v0/1.1.50+df3654b377/fabric-rendering-v0-1.1.50+df3654b377-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-rendering-v0/1.1.50+df3654b377/fabric-rendering-v0-1.1.50+df3654b377.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-rendering-v0/1.1.50+df3654b377/fabric-rendering-v0-1.1.50+df3654b377.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-rendering-v1/3.0.7+b3afc78b77/fabric-rendering-v1-3.0.7+b3afc78b77-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-rendering-v1/3.0.7+b3afc78b77/fabric-rendering-v1-3.0.7+b3afc78b77.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-rendering-v1/3.0.7+b3afc78b77/fabric-rendering-v1-3.0.7+b3afc78b77.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-rendering-v1/3.0.9+1802ada577/fabric-rendering-v1-3.0.9+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-rendering-v1/3.0.9+1802ada577/fabric-rendering-v1-3.0.9+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-rendering-v1/3.0.9+1802ada577/fabric-rendering-v1-3.0.9+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-resource-conditions-api-v1/2.3.5+ea08f9d877/fabric-resource-conditions-api-v1-2.3.5+ea08f9d877-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-resource-conditions-api-v1/2.3.5+ea08f9d877/fabric-resource-conditions-api-v1-2.3.5+ea08f9d877.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-resource-conditions-api-v1/2.3.5+ea08f9d877/fabric-resource-conditions-api-v1-2.3.5+ea08f9d877.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-resource-conditions-api-v1/2.3.9+1802ada577/fabric-resource-conditions-api-v1-2.3.9+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-resource-conditions-api-v1/2.3.9+1802ada577/fabric-resource-conditions-api-v1-2.3.9+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-resource-conditions-api-v1/2.3.9+1802ada577/fabric-resource-conditions-api-v1-2.3.9+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-resource-loader-v0/0.11.12+fb82e9d777/fabric-resource-loader-v0-0.11.12+fb82e9d777-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-resource-loader-v0/0.11.12+fb82e9d777/fabric-resource-loader-v0-0.11.12+fb82e9d777.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-resource-loader-v0/0.11.12+fb82e9d777/fabric-resource-loader-v0-0.11.12+fb82e9d777.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-resource-loader-v0/0.11.9+132c48c177/fabric-resource-loader-v0-0.11.9+132c48c177-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-resource-loader-v0/0.11.9+132c48c177/fabric-resource-loader-v0-0.11.9+132c48c177.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-resource-loader-v0/0.11.9+132c48c177/fabric-resource-loader-v0-0.11.9+132c48c177.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-screen-api-v1/2.0.7+b3afc78b77/fabric-screen-api-v1-2.0.7+b3afc78b77-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-screen-api-v1/2.0.7+b3afc78b77/fabric-screen-api-v1-2.0.7+b3afc78b77.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-screen-api-v1/2.0.7+b3afc78b77/fabric-screen-api-v1-2.0.7+b3afc78b77.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-screen-api-v1/2.0.9+1802ada577/fabric-screen-api-v1-2.0.9+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-screen-api-v1/2.0.9+1802ada577/fabric-screen-api-v1-2.0.9+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-screen-api-v1/2.0.9+1802ada577/fabric-screen-api-v1-2.0.9+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-screen-handler-api-v1/1.3.29+b3afc78b77/fabric-screen-handler-api-v1-1.3.29+b3afc78b77-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-screen-handler-api-v1/1.3.29+b3afc78b77/fabric-screen-handler-api-v1-1.3.29+b3afc78b77.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-screen-handler-api-v1/1.3.29+b3afc78b77/fabric-screen-handler-api-v1-1.3.29+b3afc78b77.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-screen-handler-api-v1/1.3.32+1802ada577/fabric-screen-handler-api-v1-1.3.32+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-screen-handler-api-v1/1.3.32+1802ada577/fabric-screen-handler-api-v1-1.3.32+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-screen-handler-api-v1/1.3.32+1802ada577/fabric-screen-handler-api-v1-1.3.32+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-sound-api-v1/1.0.12+b3afc78b77/fabric-sound-api-v1-1.0.12+b3afc78b77-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-sound-api-v1/1.0.12+b3afc78b77/fabric-sound-api-v1-1.0.12+b3afc78b77.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-sound-api-v1/1.0.12+b3afc78b77/fabric-sound-api-v1-1.0.12+b3afc78b77.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-sound-api-v1/1.0.14+1802ada577/fabric-sound-api-v1-1.0.14+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-sound-api-v1/1.0.14+1802ada577/fabric-sound-api-v1-1.0.14+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-sound-api-v1/1.0.14+1802ada577/fabric-sound-api-v1-1.0.14+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-transfer-api-v1/3.3.0+cdf060b277/fabric-transfer-api-v1-3.3.0+cdf060b277-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-transfer-api-v1/3.3.0+cdf060b277/fabric-transfer-api-v1-3.3.0+cdf060b277.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-transfer-api-v1/3.3.0+cdf060b277/fabric-transfer-api-v1-3.3.0+cdf060b277.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-transfer-api-v1/3.3.6+8dd72ea377/fabric-transfer-api-v1-3.3.6+8dd72ea377-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-transfer-api-v1/3.3.6+8dd72ea377/fabric-transfer-api-v1-3.3.6+8dd72ea377.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-transfer-api-v1/3.3.6+8dd72ea377/fabric-transfer-api-v1-3.3.6+8dd72ea377.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-transitive-access-wideners-v1/4.3.0+6c31357e77/fabric-transitive-access-wideners-v1-4.3.0+6c31357e77-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-transitive-access-wideners-v1/4.3.0+6c31357e77/fabric-transitive-access-wideners-v1-4.3.0+6c31357e77.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-transitive-access-wideners-v1/4.3.0+6c31357e77/fabric-transitive-access-wideners-v1-4.3.0+6c31357e77.pom
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-transitive-access-wideners-v1/4.3.2+1802ada577/fabric-transitive-access-wideners-v1-4.3.2+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-transitive-access-wideners-v1/4.3.2+1802ada577/fabric-transitive-access-wideners-v1-4.3.2+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/loom_mappings_1_20_1_layered_hash_2198_v2/net/fabricmc/fabric-api/fabric-transitive-access-wideners-v1/4.3.2+1802ada577/fabric-transitive-access-wideners-v1-4.3.2+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-api-base-common/0.4.32+1802ada577/fabric-api-base-common-0.4.32+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-api-base-common/0.4.32+1802ada577/fabric-api-base-common-0.4.32+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-api-base-common/0.4.32+1802ada577/fabric-api-base-common-0.4.32+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-api-base/0.4.32+1802ada577/fabric-api-base-0.4.32+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-api-base/0.4.32+1802ada577/fabric-api-base-0.4.32+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-api-base/0.4.32+1802ada577/fabric-api-base-0.4.32+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-api-common/0.92.5+1.20.1/fabric-api-common-0.92.5+1.20.1-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-api-common/0.92.5+1.20.1/fabric-api-common-0.92.5+1.20.1.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-api-common/0.92.5+1.20.1/fabric-api-common-0.92.5+1.20.1.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-api-lookup-api-v1-common/1.6.37+1802ada577/fabric-api-lookup-api-v1-common-1.6.37+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-api-lookup-api-v1-common/1.6.37+1802ada577/fabric-api-lookup-api-v1-common-1.6.37+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-api-lookup-api-v1-common/1.6.37+1802ada577/fabric-api-lookup-api-v1-common-1.6.37+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-api-lookup-api-v1/1.6.37+1802ada577/fabric-api-lookup-api-v1-1.6.37+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-api-lookup-api-v1/1.6.37+1802ada577/fabric-api-lookup-api-v1-1.6.37+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-api-lookup-api-v1/1.6.37+1802ada577/fabric-api-lookup-api-v1-1.6.37+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-api/0.92.5+1.20.1/fabric-api-0.92.5+1.20.1-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-api/0.92.5+1.20.1/fabric-api-0.92.5+1.20.1.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-api/0.92.5+1.20.1/fabric-api-0.92.5+1.20.1.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-biome-api-v1-common/13.0.14+1802ada577/fabric-biome-api-v1-common-13.0.14+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-biome-api-v1-common/13.0.14+1802ada577/fabric-biome-api-v1-common-13.0.14+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-biome-api-v1-common/13.0.14+1802ada577/fabric-biome-api-v1-common-13.0.14+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-biome-api-v1/13.0.14+1802ada577/fabric-biome-api-v1-13.0.14+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-biome-api-v1/13.0.14+1802ada577/fabric-biome-api-v1-13.0.14+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-biome-api-v1/13.0.14+1802ada577/fabric-biome-api-v1-13.0.14+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-block-api-v1-common/1.0.12+1802ada577/fabric-block-api-v1-common-1.0.12+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-block-api-v1-common/1.0.12+1802ada577/fabric-block-api-v1-common-1.0.12+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-block-api-v1-common/1.0.12+1802ada577/fabric-block-api-v1-common-1.0.12+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-block-api-v1/1.0.12+1802ada577/fabric-block-api-v1-1.0.12+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-block-api-v1/1.0.12+1802ada577/fabric-block-api-v1-1.0.12+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-block-api-v1/1.0.12+1802ada577/fabric-block-api-v1-1.0.12+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-block-view-api-v2-client/1.0.3+924f046a77/fabric-block-view-api-v2-client-1.0.3+924f046a77-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-block-view-api-v2-client/1.0.3+924f046a77/fabric-block-view-api-v2-client-1.0.3+924f046a77.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-block-view-api-v2-client/1.0.3+924f046a77/fabric-block-view-api-v2-client-1.0.3+924f046a77.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-block-view-api-v2-common/1.0.3+924f046a77/fabric-block-view-api-v2-common-1.0.3+924f046a77-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-block-view-api-v2-common/1.0.3+924f046a77/fabric-block-view-api-v2-common-1.0.3+924f046a77.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-block-view-api-v2-common/1.0.3+924f046a77/fabric-block-view-api-v2-common-1.0.3+924f046a77.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-block-view-api-v2/1.0.3+924f046a77/fabric-block-view-api-v2-1.0.3+924f046a77-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-block-view-api-v2/1.0.3+924f046a77/fabric-block-view-api-v2-1.0.3+924f046a77.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-block-view-api-v2/1.0.3+924f046a77/fabric-block-view-api-v2-1.0.3+924f046a77.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-blockrenderlayer-v1-client/1.1.42+1802ada577/fabric-blockrenderlayer-v1-client-1.1.42+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-blockrenderlayer-v1-client/1.1.42+1802ada577/fabric-blockrenderlayer-v1-client-1.1.42+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-blockrenderlayer-v1-client/1.1.42+1802ada577/fabric-blockrenderlayer-v1-client-1.1.42+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-blockrenderlayer-v1/1.1.42+1802ada577/fabric-blockrenderlayer-v1-1.1.42+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-blockrenderlayer-v1/1.1.42+1802ada577/fabric-blockrenderlayer-v1-1.1.42+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-blockrenderlayer-v1/1.1.42+1802ada577/fabric-blockrenderlayer-v1-1.1.42+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-client-tags-api-v1-client/1.1.3+1802ada577/fabric-client-tags-api-v1-client-1.1.3+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-client-tags-api-v1-client/1.1.3+1802ada577/fabric-client-tags-api-v1-client-1.1.3+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-client-tags-api-v1-client/1.1.3+1802ada577/fabric-client-tags-api-v1-client-1.1.3+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-client-tags-api-v1/1.1.3+1802ada577/fabric-client-tags-api-v1-1.1.3+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-client-tags-api-v1/1.1.3+1802ada577/fabric-client-tags-api-v1-1.1.3+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-client-tags-api-v1/1.1.3+1802ada577/fabric-client-tags-api-v1-1.1.3+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-command-api-v1-common/1.2.35+f71b366f77/fabric-command-api-v1-common-1.2.35+f71b366f77-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-command-api-v1-common/1.2.35+f71b366f77/fabric-command-api-v1-common-1.2.35+f71b366f77.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-command-api-v1-common/1.2.35+f71b366f77/fabric-command-api-v1-common-1.2.35+f71b366f77.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-command-api-v1/1.2.35+f71b366f77/fabric-command-api-v1-1.2.35+f71b366f77-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-command-api-v1/1.2.35+f71b366f77/fabric-command-api-v1-1.2.35+f71b366f77.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-command-api-v1/1.2.35+f71b366f77/fabric-command-api-v1-1.2.35+f71b366f77.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-command-api-v2-client/2.2.14+1802ada577/fabric-command-api-v2-client-2.2.14+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-command-api-v2-client/2.2.14+1802ada577/fabric-command-api-v2-client-2.2.14+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-command-api-v2-client/2.2.14+1802ada577/fabric-command-api-v2-client-2.2.14+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-command-api-v2-common/2.2.14+1802ada577/fabric-command-api-v2-common-2.2.14+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-command-api-v2-common/2.2.14+1802ada577/fabric-command-api-v2-common-2.2.14+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-command-api-v2-common/2.2.14+1802ada577/fabric-command-api-v2-common-2.2.14+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-command-api-v2/2.2.14+1802ada577/fabric-command-api-v2-2.2.14+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-command-api-v2/2.2.14+1802ada577/fabric-command-api-v2-2.2.14+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-command-api-v2/2.2.14+1802ada577/fabric-command-api-v2-2.2.14+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-commands-v0-common/0.2.52+df3654b377/fabric-commands-v0-common-0.2.52+df3654b377-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-commands-v0-common/0.2.52+df3654b377/fabric-commands-v0-common-0.2.52+df3654b377.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-commands-v0-common/0.2.52+df3654b377/fabric-commands-v0-common-0.2.52+df3654b377.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-commands-v0/0.2.52+df3654b377/fabric-commands-v0-0.2.52+df3654b377-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-commands-v0/0.2.52+df3654b377/fabric-commands-v0-0.2.52+df3654b377.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-commands-v0/0.2.52+df3654b377/fabric-commands-v0-0.2.52+df3654b377.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-containers-v0-client/0.1.66+df3654b377/fabric-containers-v0-client-0.1.66+df3654b377-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-containers-v0-client/0.1.66+df3654b377/fabric-containers-v0-client-0.1.66+df3654b377.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-containers-v0-client/0.1.66+df3654b377/fabric-containers-v0-client-0.1.66+df3654b377.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-containers-v0-common/0.1.66+df3654b377/fabric-containers-v0-common-0.1.66+df3654b377-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-containers-v0-common/0.1.66+df3654b377/fabric-containers-v0-common-0.1.66+df3654b377.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-containers-v0-common/0.1.66+df3654b377/fabric-containers-v0-common-0.1.66+df3654b377.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-containers-v0/0.1.66+df3654b377/fabric-containers-v0-0.1.66+df3654b377-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-containers-v0/0.1.66+df3654b377/fabric-containers-v0-0.1.66+df3654b377.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-containers-v0/0.1.66+df3654b377/fabric-containers-v0-0.1.66+df3654b377.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-content-registries-v0-common/4.0.13+1802ada577/fabric-content-registries-v0-common-4.0.13+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-content-registries-v0-common/4.0.13+1802ada577/fabric-content-registries-v0-common-4.0.13+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-content-registries-v0-common/4.0.13+1802ada577/fabric-content-registries-v0-common-4.0.13+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-content-registries-v0/4.0.13+1802ada577/fabric-content-registries-v0-4.0.13+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-content-registries-v0/4.0.13+1802ada577/fabric-content-registries-v0-4.0.13+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-content-registries-v0/4.0.13+1802ada577/fabric-content-registries-v0-4.0.13+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-convention-tags-v1-common/1.5.6+1802ada577/fabric-convention-tags-v1-common-1.5.6+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-convention-tags-v1-common/1.5.6+1802ada577/fabric-convention-tags-v1-common-1.5.6+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-convention-tags-v1-common/1.5.6+1802ada577/fabric-convention-tags-v1-common-1.5.6+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-convention-tags-v1/1.5.6+1802ada577/fabric-convention-tags-v1-1.5.6+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-convention-tags-v1/1.5.6+1802ada577/fabric-convention-tags-v1-1.5.6+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-convention-tags-v1/1.5.6+1802ada577/fabric-convention-tags-v1-1.5.6+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-crash-report-info-v1-common/0.2.20+1802ada577/fabric-crash-report-info-v1-common-0.2.20+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-crash-report-info-v1-common/0.2.20+1802ada577/fabric-crash-report-info-v1-common-0.2.20+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-crash-report-info-v1-common/0.2.20+1802ada577/fabric-crash-report-info-v1-common-0.2.20+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-crash-report-info-v1/0.2.20+1802ada577/fabric-crash-report-info-v1-0.2.20+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-crash-report-info-v1/0.2.20+1802ada577/fabric-crash-report-info-v1-0.2.20+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-crash-report-info-v1/0.2.20+1802ada577/fabric-crash-report-info-v1-0.2.20+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-data-attachment-api-v1-client/1.0.2+de0fd6d177/fabric-data-attachment-api-v1-client-1.0.2+de0fd6d177-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-data-attachment-api-v1-client/1.0.2+de0fd6d177/fabric-data-attachment-api-v1-client-1.0.2+de0fd6d177.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-data-attachment-api-v1-client/1.0.2+de0fd6d177/fabric-data-attachment-api-v1-client-1.0.2+de0fd6d177.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-data-attachment-api-v1-common/1.0.2+de0fd6d177/fabric-data-attachment-api-v1-common-1.0.2+de0fd6d177-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-data-attachment-api-v1-common/1.0.2+de0fd6d177/fabric-data-attachment-api-v1-common-1.0.2+de0fd6d177.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-data-attachment-api-v1-common/1.0.2+de0fd6d177/fabric-data-attachment-api-v1-common-1.0.2+de0fd6d177.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-data-attachment-api-v1/1.0.2+de0fd6d177/fabric-data-attachment-api-v1-1.0.2+de0fd6d177-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-data-attachment-api-v1/1.0.2+de0fd6d177/fabric-data-attachment-api-v1-1.0.2+de0fd6d177.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-data-attachment-api-v1/1.0.2+de0fd6d177/fabric-data-attachment-api-v1-1.0.2+de0fd6d177.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-data-generation-api-v1-client/12.3.6+1802ada577/fabric-data-generation-api-v1-client-12.3.6+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-data-generation-api-v1-client/12.3.6+1802ada577/fabric-data-generation-api-v1-client-12.3.6+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-data-generation-api-v1-client/12.3.6+1802ada577/fabric-data-generation-api-v1-client-12.3.6+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-data-generation-api-v1-common/12.3.6+1802ada577/fabric-data-generation-api-v1-common-12.3.6+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-data-generation-api-v1-common/12.3.6+1802ada577/fabric-data-generation-api-v1-common-12.3.6+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-data-generation-api-v1-common/12.3.6+1802ada577/fabric-data-generation-api-v1-common-12.3.6+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-data-generation-api-v1/12.3.6+1802ada577/fabric-data-generation-api-v1-12.3.6+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-data-generation-api-v1/12.3.6+1802ada577/fabric-data-generation-api-v1-12.3.6+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-data-generation-api-v1/12.3.6+1802ada577/fabric-data-generation-api-v1-12.3.6+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-dimensions-v1-common/2.1.55+1802ada577/fabric-dimensions-v1-common-2.1.55+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-dimensions-v1-common/2.1.55+1802ada577/fabric-dimensions-v1-common-2.1.55+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-dimensions-v1-common/2.1.55+1802ada577/fabric-dimensions-v1-common-2.1.55+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-dimensions-v1/2.1.55+1802ada577/fabric-dimensions-v1-2.1.55+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-dimensions-v1/2.1.55+1802ada577/fabric-dimensions-v1-2.1.55+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-dimensions-v1/2.1.55+1802ada577/fabric-dimensions-v1-2.1.55+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-entity-events-v1-client/1.6.1+1c78457f77/fabric-entity-events-v1-client-1.6.1+1c78457f77-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-entity-events-v1-client/1.6.1+1c78457f77/fabric-entity-events-v1-client-1.6.1+1c78457f77.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-entity-events-v1-client/1.6.1+1c78457f77/fabric-entity-events-v1-client-1.6.1+1c78457f77.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-entity-events-v1-common/1.6.1+1c78457f77/fabric-entity-events-v1-common-1.6.1+1c78457f77-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-entity-events-v1-common/1.6.1+1c78457f77/fabric-entity-events-v1-common-1.6.1+1c78457f77.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-entity-events-v1-common/1.6.1+1c78457f77/fabric-entity-events-v1-common-1.6.1+1c78457f77.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-entity-events-v1/1.6.1+1c78457f77/fabric-entity-events-v1-1.6.1+1c78457f77-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-entity-events-v1/1.6.1+1c78457f77/fabric-entity-events-v1-1.6.1+1c78457f77.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-entity-events-v1/1.6.1+1c78457f77/fabric-entity-events-v1-1.6.1+1c78457f77.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-events-interaction-v0-client/0.6.4+13a40c6677/fabric-events-interaction-v0-client-0.6.4+13a40c6677-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-events-interaction-v0-client/0.6.4+13a40c6677/fabric-events-interaction-v0-client-0.6.4+13a40c6677.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-events-interaction-v0-client/0.6.4+13a40c6677/fabric-events-interaction-v0-client-0.6.4+13a40c6677.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-events-interaction-v0-common/0.6.4+13a40c6677/fabric-events-interaction-v0-common-0.6.4+13a40c6677-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-events-interaction-v0-common/0.6.4+13a40c6677/fabric-events-interaction-v0-common-0.6.4+13a40c6677.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-events-interaction-v0-common/0.6.4+13a40c6677/fabric-events-interaction-v0-common-0.6.4+13a40c6677.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-events-interaction-v0/0.6.4+13a40c6677/fabric-events-interaction-v0-0.6.4+13a40c6677-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-events-interaction-v0/0.6.4+13a40c6677/fabric-events-interaction-v0-0.6.4+13a40c6677.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-events-interaction-v0/0.6.4+13a40c6677/fabric-events-interaction-v0-0.6.4+13a40c6677.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-events-lifecycle-v0-client/0.2.64+df3654b377/fabric-events-lifecycle-v0-client-0.2.64+df3654b377-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-events-lifecycle-v0-client/0.2.64+df3654b377/fabric-events-lifecycle-v0-client-0.2.64+df3654b377.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-events-lifecycle-v0-client/0.2.64+df3654b377/fabric-events-lifecycle-v0-client-0.2.64+df3654b377.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-events-lifecycle-v0-common/0.2.64+df3654b377/fabric-events-lifecycle-v0-common-0.2.64+df3654b377-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-events-lifecycle-v0-common/0.2.64+df3654b377/fabric-events-lifecycle-v0-common-0.2.64+df3654b377.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-events-lifecycle-v0-common/0.2.64+df3654b377/fabric-events-lifecycle-v0-common-0.2.64+df3654b377.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-events-lifecycle-v0/0.2.64+df3654b377/fabric-events-lifecycle-v0-0.2.64+df3654b377-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-events-lifecycle-v0/0.2.64+df3654b377/fabric-events-lifecycle-v0-0.2.64+df3654b377.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-events-lifecycle-v0/0.2.64+df3654b377/fabric-events-lifecycle-v0-0.2.64+df3654b377.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-game-rule-api-v1-client/1.0.41+1802ada577/fabric-game-rule-api-v1-client-1.0.41+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-game-rule-api-v1-client/1.0.41+1802ada577/fabric-game-rule-api-v1-client-1.0.41+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-game-rule-api-v1-client/1.0.41+1802ada577/fabric-game-rule-api-v1-client-1.0.41+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-game-rule-api-v1-common/1.0.41+1802ada577/fabric-game-rule-api-v1-common-1.0.41+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-game-rule-api-v1-common/1.0.41+1802ada577/fabric-game-rule-api-v1-common-1.0.41+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-game-rule-api-v1-common/1.0.41+1802ada577/fabric-game-rule-api-v1-common-1.0.41+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-game-rule-api-v1/1.0.41+1802ada577/fabric-game-rule-api-v1-1.0.41+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-game-rule-api-v1/1.0.41+1802ada577/fabric-game-rule-api-v1-1.0.41+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-game-rule-api-v1/1.0.41+1802ada577/fabric-game-rule-api-v1-1.0.41+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-gametest-api-v1-common/1.2.15+1802ada577/fabric-gametest-api-v1-common-1.2.15+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-gametest-api-v1-common/1.2.15+1802ada577/fabric-gametest-api-v1-common-1.2.15+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-gametest-api-v1-common/1.2.15+1802ada577/fabric-gametest-api-v1-common-1.2.15+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-gametest-api-v1/1.2.15+1802ada577/fabric-gametest-api-v1-1.2.15+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-gametest-api-v1/1.2.15+1802ada577/fabric-gametest-api-v1-1.2.15+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-gametest-api-v1/1.2.15+1802ada577/fabric-gametest-api-v1-1.2.15+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-item-api-v1-client/2.1.29+1802ada577/fabric-item-api-v1-client-2.1.29+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-item-api-v1-client/2.1.29+1802ada577/fabric-item-api-v1-client-2.1.29+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-item-api-v1-client/2.1.29+1802ada577/fabric-item-api-v1-client-2.1.29+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-item-api-v1-common/2.1.29+1802ada577/fabric-item-api-v1-common-2.1.29+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-item-api-v1-common/2.1.29+1802ada577/fabric-item-api-v1-common-2.1.29+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-item-api-v1-common/2.1.29+1802ada577/fabric-item-api-v1-common-2.1.29+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-item-api-v1/2.1.29+1802ada577/fabric-item-api-v1-2.1.29+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-item-api-v1/2.1.29+1802ada577/fabric-item-api-v1-2.1.29+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-item-api-v1/2.1.29+1802ada577/fabric-item-api-v1-2.1.29+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-item-group-api-v1-client/4.0.14+1802ada577/fabric-item-group-api-v1-client-4.0.14+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-item-group-api-v1-client/4.0.14+1802ada577/fabric-item-group-api-v1-client-4.0.14+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-item-group-api-v1-client/4.0.14+1802ada577/fabric-item-group-api-v1-client-4.0.14+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-item-group-api-v1-common/4.0.14+1802ada577/fabric-item-group-api-v1-common-4.0.14+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-item-group-api-v1-common/4.0.14+1802ada577/fabric-item-group-api-v1-common-4.0.14+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-item-group-api-v1-common/4.0.14+1802ada577/fabric-item-group-api-v1-common-4.0.14+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-item-group-api-v1/4.0.14+1802ada577/fabric-item-group-api-v1-4.0.14+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-item-group-api-v1/4.0.14+1802ada577/fabric-item-group-api-v1-4.0.14+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-item-group-api-v1/4.0.14+1802ada577/fabric-item-group-api-v1-4.0.14+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-key-binding-api-v1-client/1.0.38+1802ada577/fabric-key-binding-api-v1-client-1.0.38+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-key-binding-api-v1-client/1.0.38+1802ada577/fabric-key-binding-api-v1-client-1.0.38+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-key-binding-api-v1-client/1.0.38+1802ada577/fabric-key-binding-api-v1-client-1.0.38+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-key-binding-api-v1/1.0.38+1802ada577/fabric-key-binding-api-v1-1.0.38+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-key-binding-api-v1/1.0.38+1802ada577/fabric-key-binding-api-v1-1.0.38+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-key-binding-api-v1/1.0.38+1802ada577/fabric-key-binding-api-v1-1.0.38+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-keybindings-v0-client/0.2.36+df3654b377/fabric-keybindings-v0-client-0.2.36+df3654b377-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-keybindings-v0-client/0.2.36+df3654b377/fabric-keybindings-v0-client-0.2.36+df3654b377.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-keybindings-v0-client/0.2.36+df3654b377/fabric-keybindings-v0-client-0.2.36+df3654b377.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-keybindings-v0/0.2.36+df3654b377/fabric-keybindings-v0-0.2.36+df3654b377-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-keybindings-v0/0.2.36+df3654b377/fabric-keybindings-v0-0.2.36+df3654b377.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-keybindings-v0/0.2.36+df3654b377/fabric-keybindings-v0-0.2.36+df3654b377.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-lifecycle-events-v1-client/2.2.23+1802ada577/fabric-lifecycle-events-v1-client-2.2.23+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-lifecycle-events-v1-client/2.2.23+1802ada577/fabric-lifecycle-events-v1-client-2.2.23+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-lifecycle-events-v1-client/2.2.23+1802ada577/fabric-lifecycle-events-v1-client-2.2.23+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-lifecycle-events-v1-common/2.2.23+1802ada577/fabric-lifecycle-events-v1-common-2.2.23+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-lifecycle-events-v1-common/2.2.23+1802ada577/fabric-lifecycle-events-v1-common-2.2.23+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-lifecycle-events-v1-common/2.2.23+1802ada577/fabric-lifecycle-events-v1-common-2.2.23+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-lifecycle-events-v1/2.2.23+1802ada577/fabric-lifecycle-events-v1-2.2.23+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-lifecycle-events-v1/2.2.23+1802ada577/fabric-lifecycle-events-v1-2.2.23+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-lifecycle-events-v1/2.2.23+1802ada577/fabric-lifecycle-events-v1-2.2.23+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-loot-api-v2-common/1.2.3+1802ada577/fabric-loot-api-v2-common-1.2.3+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-loot-api-v2-common/1.2.3+1802ada577/fabric-loot-api-v2-common-1.2.3+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-loot-api-v2-common/1.2.3+1802ada577/fabric-loot-api-v2-common-1.2.3+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-loot-api-v2/1.2.3+1802ada577/fabric-loot-api-v2-1.2.3+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-loot-api-v2/1.2.3+1802ada577/fabric-loot-api-v2-1.2.3+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-loot-api-v2/1.2.3+1802ada577/fabric-loot-api-v2-1.2.3+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-loot-tables-v1-common/1.1.47+9e7660c677/fabric-loot-tables-v1-common-1.1.47+9e7660c677-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-loot-tables-v1-common/1.1.47+9e7660c677/fabric-loot-tables-v1-common-1.1.47+9e7660c677.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-loot-tables-v1-common/1.1.47+9e7660c677/fabric-loot-tables-v1-common-1.1.47+9e7660c677.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-loot-tables-v1/1.1.47+9e7660c677/fabric-loot-tables-v1-1.1.47+9e7660c677-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-loot-tables-v1/1.1.47+9e7660c677/fabric-loot-tables-v1-1.1.47+9e7660c677.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-loot-tables-v1/1.1.47+9e7660c677/fabric-loot-tables-v1-1.1.47+9e7660c677.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-message-api-v1-client/5.1.10+1802ada577/fabric-message-api-v1-client-5.1.10+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-message-api-v1-client/5.1.10+1802ada577/fabric-message-api-v1-client-5.1.10+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-message-api-v1-client/5.1.10+1802ada577/fabric-message-api-v1-client-5.1.10+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-message-api-v1-common/5.1.10+1802ada577/fabric-message-api-v1-common-5.1.10+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-message-api-v1-common/5.1.10+1802ada577/fabric-message-api-v1-common-5.1.10+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-message-api-v1-common/5.1.10+1802ada577/fabric-message-api-v1-common-5.1.10+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-message-api-v1/5.1.10+1802ada577/fabric-message-api-v1-5.1.10+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-message-api-v1/5.1.10+1802ada577/fabric-message-api-v1-5.1.10+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-message-api-v1/5.1.10+1802ada577/fabric-message-api-v1-5.1.10+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-mining-level-api-v1-common/2.1.52+1802ada577/fabric-mining-level-api-v1-common-2.1.52+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-mining-level-api-v1-common/2.1.52+1802ada577/fabric-mining-level-api-v1-common-2.1.52+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-mining-level-api-v1-common/2.1.52+1802ada577/fabric-mining-level-api-v1-common-2.1.52+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-mining-level-api-v1/2.1.52+1802ada577/fabric-mining-level-api-v1-2.1.52+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-mining-level-api-v1/2.1.52+1802ada577/fabric-mining-level-api-v1-2.1.52+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-mining-level-api-v1/2.1.52+1802ada577/fabric-mining-level-api-v1-2.1.52+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-model-loading-api-v1-client/1.0.4+1802ada577/fabric-model-loading-api-v1-client-1.0.4+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-model-loading-api-v1-client/1.0.4+1802ada577/fabric-model-loading-api-v1-client-1.0.4+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-model-loading-api-v1-client/1.0.4+1802ada577/fabric-model-loading-api-v1-client-1.0.4+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-model-loading-api-v1/1.0.4+1802ada577/fabric-model-loading-api-v1-1.0.4+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-model-loading-api-v1/1.0.4+1802ada577/fabric-model-loading-api-v1-1.0.4+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-model-loading-api-v1/1.0.4+1802ada577/fabric-model-loading-api-v1-1.0.4+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-models-v0-client/0.4.3+9386d8a777/fabric-models-v0-client-0.4.3+9386d8a777-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-models-v0-client/0.4.3+9386d8a777/fabric-models-v0-client-0.4.3+9386d8a777.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-models-v0-client/0.4.3+9386d8a777/fabric-models-v0-client-0.4.3+9386d8a777.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-models-v0/0.4.3+9386d8a777/fabric-models-v0-0.4.3+9386d8a777-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-models-v0/0.4.3+9386d8a777/fabric-models-v0-0.4.3+9386d8a777.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-models-v0/0.4.3+9386d8a777/fabric-models-v0-0.4.3+9386d8a777.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-networking-api-v1-client/1.3.13+13a40c6677/fabric-networking-api-v1-client-1.3.13+13a40c6677-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-networking-api-v1-client/1.3.13+13a40c6677/fabric-networking-api-v1-client-1.3.13+13a40c6677.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-networking-api-v1-client/1.3.13+13a40c6677/fabric-networking-api-v1-client-1.3.13+13a40c6677.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-networking-api-v1-common/1.3.13+13a40c6677/fabric-networking-api-v1-common-1.3.13+13a40c6677-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-networking-api-v1-common/1.3.13+13a40c6677/fabric-networking-api-v1-common-1.3.13+13a40c6677.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-networking-api-v1-common/1.3.13+13a40c6677/fabric-networking-api-v1-common-1.3.13+13a40c6677.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-networking-api-v1/1.3.13+13a40c6677/fabric-networking-api-v1-1.3.13+13a40c6677-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-networking-api-v1/1.3.13+13a40c6677/fabric-networking-api-v1-1.3.13+13a40c6677.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-networking-api-v1/1.3.13+13a40c6677/fabric-networking-api-v1-1.3.13+13a40c6677.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-networking-v0-client/0.3.53+df3654b377/fabric-networking-v0-client-0.3.53+df3654b377-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-networking-v0-client/0.3.53+df3654b377/fabric-networking-v0-client-0.3.53+df3654b377.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-networking-v0-client/0.3.53+df3654b377/fabric-networking-v0-client-0.3.53+df3654b377.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-networking-v0-common/0.3.53+df3654b377/fabric-networking-v0-common-0.3.53+df3654b377-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-networking-v0-common/0.3.53+df3654b377/fabric-networking-v0-common-0.3.53+df3654b377.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-networking-v0-common/0.3.53+df3654b377/fabric-networking-v0-common-0.3.53+df3654b377.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-networking-v0/0.3.53+df3654b377/fabric-networking-v0-0.3.53+df3654b377-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-networking-v0/0.3.53+df3654b377/fabric-networking-v0-0.3.53+df3654b377.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-networking-v0/0.3.53+df3654b377/fabric-networking-v0-0.3.53+df3654b377.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-object-builder-api-v1-client/11.1.5+e35120df77/fabric-object-builder-api-v1-client-11.1.5+e35120df77-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-object-builder-api-v1-client/11.1.5+e35120df77/fabric-object-builder-api-v1-client-11.1.5+e35120df77.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-object-builder-api-v1-client/11.1.5+e35120df77/fabric-object-builder-api-v1-client-11.1.5+e35120df77.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-object-builder-api-v1-common/11.1.5+e35120df77/fabric-object-builder-api-v1-common-11.1.5+e35120df77-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-object-builder-api-v1-common/11.1.5+e35120df77/fabric-object-builder-api-v1-common-11.1.5+e35120df77.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-object-builder-api-v1-common/11.1.5+e35120df77/fabric-object-builder-api-v1-common-11.1.5+e35120df77.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-object-builder-api-v1/11.1.5+e35120df77/fabric-object-builder-api-v1-11.1.5+e35120df77-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-object-builder-api-v1/11.1.5+e35120df77/fabric-object-builder-api-v1-11.1.5+e35120df77.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-object-builder-api-v1/11.1.5+e35120df77/fabric-object-builder-api-v1-11.1.5+e35120df77.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-particles-v1-client/1.1.3+1802ada577/fabric-particles-v1-client-1.1.3+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-particles-v1-client/1.1.3+1802ada577/fabric-particles-v1-client-1.1.3+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-particles-v1-client/1.1.3+1802ada577/fabric-particles-v1-client-1.1.3+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-particles-v1-common/1.1.3+1802ada577/fabric-particles-v1-common-1.1.3+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-particles-v1-common/1.1.3+1802ada577/fabric-particles-v1-common-1.1.3+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-particles-v1-common/1.1.3+1802ada577/fabric-particles-v1-common-1.1.3+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-particles-v1/1.1.3+1802ada577/fabric-particles-v1-1.1.3+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-particles-v1/1.1.3+1802ada577/fabric-particles-v1-1.1.3+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-particles-v1/1.1.3+1802ada577/fabric-particles-v1-1.1.3+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-recipe-api-v1-client/1.0.23+1802ada577/fabric-recipe-api-v1-client-1.0.23+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-recipe-api-v1-client/1.0.23+1802ada577/fabric-recipe-api-v1-client-1.0.23+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-recipe-api-v1-client/1.0.23+1802ada577/fabric-recipe-api-v1-client-1.0.23+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-recipe-api-v1-common/1.0.23+1802ada577/fabric-recipe-api-v1-common-1.0.23+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-recipe-api-v1-common/1.0.23+1802ada577/fabric-recipe-api-v1-common-1.0.23+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-recipe-api-v1-common/1.0.23+1802ada577/fabric-recipe-api-v1-common-1.0.23+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-recipe-api-v1/1.0.23+1802ada577/fabric-recipe-api-v1-1.0.23+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-recipe-api-v1/1.0.23+1802ada577/fabric-recipe-api-v1-1.0.23+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-recipe-api-v1/1.0.23+1802ada577/fabric-recipe-api-v1-1.0.23+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-registry-sync-v0-client/2.3.5+1802ada577/fabric-registry-sync-v0-client-2.3.5+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-registry-sync-v0-client/2.3.5+1802ada577/fabric-registry-sync-v0-client-2.3.5+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-registry-sync-v0-client/2.3.5+1802ada577/fabric-registry-sync-v0-client-2.3.5+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-registry-sync-v0-common/2.3.5+1802ada577/fabric-registry-sync-v0-common-2.3.5+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-registry-sync-v0-common/2.3.5+1802ada577/fabric-registry-sync-v0-common-2.3.5+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-registry-sync-v0-common/2.3.5+1802ada577/fabric-registry-sync-v0-common-2.3.5+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-registry-sync-v0/2.3.5+1802ada577/fabric-registry-sync-v0-2.3.5+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-registry-sync-v0/2.3.5+1802ada577/fabric-registry-sync-v0-2.3.5+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-registry-sync-v0/2.3.5+1802ada577/fabric-registry-sync-v0-2.3.5+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-renderer-api-v1-client/3.2.2+1802ada577/fabric-renderer-api-v1-client-3.2.2+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-renderer-api-v1-client/3.2.2+1802ada577/fabric-renderer-api-v1-client-3.2.2+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-renderer-api-v1-client/3.2.2+1802ada577/fabric-renderer-api-v1-client-3.2.2+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-renderer-api-v1/3.2.2+1802ada577/fabric-renderer-api-v1-3.2.2+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-renderer-api-v1/3.2.2+1802ada577/fabric-renderer-api-v1-3.2.2+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-renderer-api-v1/3.2.2+1802ada577/fabric-renderer-api-v1-3.2.2+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-renderer-indigo-client/1.5.3+85287f9f77/fabric-renderer-indigo-client-1.5.3+85287f9f77-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-renderer-indigo-client/1.5.3+85287f9f77/fabric-renderer-indigo-client-1.5.3+85287f9f77.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-renderer-indigo-client/1.5.3+85287f9f77/fabric-renderer-indigo-client-1.5.3+85287f9f77.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-renderer-indigo/1.5.3+85287f9f77/fabric-renderer-indigo-1.5.3+85287f9f77-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-renderer-indigo/1.5.3+85287f9f77/fabric-renderer-indigo-1.5.3+85287f9f77.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-renderer-indigo/1.5.3+85287f9f77/fabric-renderer-indigo-1.5.3+85287f9f77.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-renderer-registries-v1-client/3.2.47+df3654b377/fabric-renderer-registries-v1-client-3.2.47+df3654b377-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-renderer-registries-v1-client/3.2.47+df3654b377/fabric-renderer-registries-v1-client-3.2.47+df3654b377.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-renderer-registries-v1-client/3.2.47+df3654b377/fabric-renderer-registries-v1-client-3.2.47+df3654b377.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-renderer-registries-v1/3.2.47+df3654b377/fabric-renderer-registries-v1-3.2.47+df3654b377-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-renderer-registries-v1/3.2.47+df3654b377/fabric-renderer-registries-v1-3.2.47+df3654b377.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-renderer-registries-v1/3.2.47+df3654b377/fabric-renderer-registries-v1-3.2.47+df3654b377.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-rendering-data-attachment-v1-client/0.3.39+92a0d36777/fabric-rendering-data-attachment-v1-client-0.3.39+92a0d36777-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-rendering-data-attachment-v1-client/0.3.39+92a0d36777/fabric-rendering-data-attachment-v1-client-0.3.39+92a0d36777.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-rendering-data-attachment-v1-client/0.3.39+92a0d36777/fabric-rendering-data-attachment-v1-client-0.3.39+92a0d36777.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-rendering-data-attachment-v1-common/0.3.39+92a0d36777/fabric-rendering-data-attachment-v1-common-0.3.39+92a0d36777-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-rendering-data-attachment-v1-common/0.3.39+92a0d36777/fabric-rendering-data-attachment-v1-common-0.3.39+92a0d36777.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-rendering-data-attachment-v1-common/0.3.39+92a0d36777/fabric-rendering-data-attachment-v1-common-0.3.39+92a0d36777.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-rendering-data-attachment-v1/0.3.39+92a0d36777/fabric-rendering-data-attachment-v1-0.3.39+92a0d36777-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-rendering-data-attachment-v1/0.3.39+92a0d36777/fabric-rendering-data-attachment-v1-0.3.39+92a0d36777.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-rendering-data-attachment-v1/0.3.39+92a0d36777/fabric-rendering-data-attachment-v1-0.3.39+92a0d36777.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-rendering-fluids-v1-client/3.0.29+1802ada577/fabric-rendering-fluids-v1-client-3.0.29+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-rendering-fluids-v1-client/3.0.29+1802ada577/fabric-rendering-fluids-v1-client-3.0.29+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-rendering-fluids-v1-client/3.0.29+1802ada577/fabric-rendering-fluids-v1-client-3.0.29+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-rendering-fluids-v1-common/3.0.29+1802ada577/fabric-rendering-fluids-v1-common-3.0.29+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-rendering-fluids-v1-common/3.0.29+1802ada577/fabric-rendering-fluids-v1-common-3.0.29+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-rendering-fluids-v1-common/3.0.29+1802ada577/fabric-rendering-fluids-v1-common-3.0.29+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-rendering-fluids-v1/3.0.29+1802ada577/fabric-rendering-fluids-v1-3.0.29+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-rendering-fluids-v1/3.0.29+1802ada577/fabric-rendering-fluids-v1-3.0.29+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-rendering-fluids-v1/3.0.29+1802ada577/fabric-rendering-fluids-v1-3.0.29+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-rendering-v0-client/1.1.50+df3654b377/fabric-rendering-v0-client-1.1.50+df3654b377-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-rendering-v0-client/1.1.50+df3654b377/fabric-rendering-v0-client-1.1.50+df3654b377.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-rendering-v0-client/1.1.50+df3654b377/fabric-rendering-v0-client-1.1.50+df3654b377.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-rendering-v0/1.1.50+df3654b377/fabric-rendering-v0-1.1.50+df3654b377-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-rendering-v0/1.1.50+df3654b377/fabric-rendering-v0-1.1.50+df3654b377.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-rendering-v0/1.1.50+df3654b377/fabric-rendering-v0-1.1.50+df3654b377.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-rendering-v1-client/3.0.9+1802ada577/fabric-rendering-v1-client-3.0.9+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-rendering-v1-client/3.0.9+1802ada577/fabric-rendering-v1-client-3.0.9+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-rendering-v1-client/3.0.9+1802ada577/fabric-rendering-v1-client-3.0.9+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-rendering-v1/3.0.9+1802ada577/fabric-rendering-v1-3.0.9+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-rendering-v1/3.0.9+1802ada577/fabric-rendering-v1-3.0.9+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-rendering-v1/3.0.9+1802ada577/fabric-rendering-v1-3.0.9+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-resource-conditions-api-v1-common/2.3.9+1802ada577/fabric-resource-conditions-api-v1-common-2.3.9+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-resource-conditions-api-v1-common/2.3.9+1802ada577/fabric-resource-conditions-api-v1-common-2.3.9+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-resource-conditions-api-v1-common/2.3.9+1802ada577/fabric-resource-conditions-api-v1-common-2.3.9+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-resource-conditions-api-v1/2.3.9+1802ada577/fabric-resource-conditions-api-v1-2.3.9+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-resource-conditions-api-v1/2.3.9+1802ada577/fabric-resource-conditions-api-v1-2.3.9+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-resource-conditions-api-v1/2.3.9+1802ada577/fabric-resource-conditions-api-v1-2.3.9+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-resource-loader-v0-client/0.11.12+fb82e9d777/fabric-resource-loader-v0-client-0.11.12+fb82e9d777-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-resource-loader-v0-client/0.11.12+fb82e9d777/fabric-resource-loader-v0-client-0.11.12+fb82e9d777.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-resource-loader-v0-client/0.11.12+fb82e9d777/fabric-resource-loader-v0-client-0.11.12+fb82e9d777.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-resource-loader-v0-common/0.11.12+fb82e9d777/fabric-resource-loader-v0-common-0.11.12+fb82e9d777-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-resource-loader-v0-common/0.11.12+fb82e9d777/fabric-resource-loader-v0-common-0.11.12+fb82e9d777.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-resource-loader-v0-common/0.11.12+fb82e9d777/fabric-resource-loader-v0-common-0.11.12+fb82e9d777.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-resource-loader-v0/0.11.12+fb82e9d777/fabric-resource-loader-v0-0.11.12+fb82e9d777-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-resource-loader-v0/0.11.12+fb82e9d777/fabric-resource-loader-v0-0.11.12+fb82e9d777.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-resource-loader-v0/0.11.12+fb82e9d777/fabric-resource-loader-v0-0.11.12+fb82e9d777.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-screen-api-v1-client/2.0.9+1802ada577/fabric-screen-api-v1-client-2.0.9+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-screen-api-v1-client/2.0.9+1802ada577/fabric-screen-api-v1-client-2.0.9+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-screen-api-v1-client/2.0.9+1802ada577/fabric-screen-api-v1-client-2.0.9+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-screen-api-v1/2.0.9+1802ada577/fabric-screen-api-v1-2.0.9+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-screen-api-v1/2.0.9+1802ada577/fabric-screen-api-v1-2.0.9+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-screen-api-v1/2.0.9+1802ada577/fabric-screen-api-v1-2.0.9+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-screen-handler-api-v1-client/1.3.32+1802ada577/fabric-screen-handler-api-v1-client-1.3.32+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-screen-handler-api-v1-client/1.3.32+1802ada577/fabric-screen-handler-api-v1-client-1.3.32+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-screen-handler-api-v1-client/1.3.32+1802ada577/fabric-screen-handler-api-v1-client-1.3.32+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-screen-handler-api-v1-common/1.3.32+1802ada577/fabric-screen-handler-api-v1-common-1.3.32+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-screen-handler-api-v1-common/1.3.32+1802ada577/fabric-screen-handler-api-v1-common-1.3.32+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-screen-handler-api-v1-common/1.3.32+1802ada577/fabric-screen-handler-api-v1-common-1.3.32+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-screen-handler-api-v1/1.3.32+1802ada577/fabric-screen-handler-api-v1-1.3.32+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-screen-handler-api-v1/1.3.32+1802ada577/fabric-screen-handler-api-v1-1.3.32+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-screen-handler-api-v1/1.3.32+1802ada577/fabric-screen-handler-api-v1-1.3.32+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-sound-api-v1-client/1.0.14+1802ada577/fabric-sound-api-v1-client-1.0.14+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-sound-api-v1-client/1.0.14+1802ada577/fabric-sound-api-v1-client-1.0.14+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-sound-api-v1-client/1.0.14+1802ada577/fabric-sound-api-v1-client-1.0.14+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-sound-api-v1/1.0.14+1802ada577/fabric-sound-api-v1-1.0.14+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-sound-api-v1/1.0.14+1802ada577/fabric-sound-api-v1-1.0.14+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-sound-api-v1/1.0.14+1802ada577/fabric-sound-api-v1-1.0.14+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-transfer-api-v1-client/3.3.6+8dd72ea377/fabric-transfer-api-v1-client-3.3.6+8dd72ea377-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-transfer-api-v1-client/3.3.6+8dd72ea377/fabric-transfer-api-v1-client-3.3.6+8dd72ea377.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-transfer-api-v1-client/3.3.6+8dd72ea377/fabric-transfer-api-v1-client-3.3.6+8dd72ea377.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-transfer-api-v1-common/3.3.6+8dd72ea377/fabric-transfer-api-v1-common-3.3.6+8dd72ea377-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-transfer-api-v1-common/3.3.6+8dd72ea377/fabric-transfer-api-v1-common-3.3.6+8dd72ea377.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-transfer-api-v1-common/3.3.6+8dd72ea377/fabric-transfer-api-v1-common-3.3.6+8dd72ea377.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-transfer-api-v1/3.3.6+8dd72ea377/fabric-transfer-api-v1-3.3.6+8dd72ea377-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-transfer-api-v1/3.3.6+8dd72ea377/fabric-transfer-api-v1-3.3.6+8dd72ea377.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-transfer-api-v1/3.3.6+8dd72ea377/fabric-transfer-api-v1-3.3.6+8dd72ea377.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-transitive-access-wideners-v1-common/4.3.2+1802ada577/fabric-transitive-access-wideners-v1-common-4.3.2+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-transitive-access-wideners-v1-common/4.3.2+1802ada577/fabric-transitive-access-wideners-v1-common-4.3.2+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-transitive-access-wideners-v1-common/4.3.2+1802ada577/fabric-transitive-access-wideners-v1-common-4.3.2+1802ada577.pom
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-transitive-access-wideners-v1/4.3.2+1802ada577/fabric-transitive-access-wideners-v1-4.3.2+1802ada577-sources.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-transitive-access-wideners-v1/4.3.2+1802ada577/fabric-transitive-access-wideners-v1-4.3.2+1802ada577.jar
+./.gradle/loom-cache/remapped_mods/net_fabricmc_yarn_1_20_1_1_20_1_build_10_v2/net/fabricmc/fabric-api/fabric-transitive-access-wideners-v1/4.3.2+1802ada577/fabric-transitive-access-wideners-v1-4.3.2+1802ada577.pom
+./.gradle/vcs-1/gc.properties
+./.gradle/workspace-id.txt
+./.gradle/workspace-id.txt.lock
+./LICENSE
+./README.md
+./build.gradle
+./build.gradlew
+./build.sh
+./build/classes/java/main/com/example/ExampleMod$1.class
+./build/classes/java/main/com/example/ExampleMod$2.class
+./build/classes/java/main/com/example/ExampleMod$3.class
+./build/classes/java/main/com/example/ExampleMod.class
+./build/classes/java/main/com/example/mixin/ExampleMixin.class
+./build/classes/java/main/endless_items-refmap.json
+./build/libs/endless_items-1.0.2-dev.jar
+./build/libs/endless_items-1.0.2-fixed-v1.jar
+./build/libs/endless_items-1.0.2-fixed-v2.jar
+./build/libs/endless_items-1.0.2.jar
+./build/loom-cache/mixin-map-net.fabricmc.yarn.1_20_1.1.20.1+build.10-v2.main.tiny
+./build/reports/problems/problems-report.html
+./build/resources/main/assets/endless_items/blockstates/street_block.json
+./build/resources/main/assets/endless_items/blockstates/test_stone.json
+./build/resources/main/assets/endless_items/lang/en_us.json
+./build/resources/main/assets/endless_items/models/block/street_block.json
+./build/resources/main/assets/endless_items/models/block/test_stone.json
+./build/resources/main/assets/endless_items/textures/block/street_block.png
+./build/resources/main/assets/endless_items/textures/item/simple_sword.png
+./build/resources/main/endless_items.mixins.json
+./build/resources/main/fabric.mod.json
+./build/tmp/compileJava/previous-compilation-data.bin
+./build_backup/sources_20251002_111629.tar.gz
+./build_debug.log
+./build_dev.sh
+./build_logs/build_20251002_102938.log
+./build_logs/build_20251002_103459.log
+./build_logs_20251002_075924/00_info.txt
+./build_logs_20251002_075924/01_build_full.log
+./build_logs_20251002_075924/02_compile.log
+./build_logs_20251002_075924/03_resources.log
+./build_logs_20251002_075924/04_jar.log
+./build_logs_20251002_075924/05_remapjar.log
+./build_logs_20251002_075924/06_system_info.txt
+./build_logs_20251002_075924/07_project_structure.txt
+./build_logs_20251002_075924/08_build_reports_list.txt
+./build_logs_20251002_075924/09_problems_report.html
+./build_logs_20251002_075924/10_key_errors.txt
+./build_logs_20251002_075924/SUMMARY.txt
+./build_logs_20251002_082057.tar.gz
+./build_logs_20251002_082057/00_info.txt
+./build_logs_20251002_082057/01_build_full.log
+./build_logs_20251002_082057/02_compile.log
+./build_logs_20251002_082057/03_resources.log
+./build_logs_20251002_082057/04_jar.log
+./build_logs_20251002_082057/05_remapjar.log
+./build_logs_20251002_082057/06_system_info.txt
+./build_logs_20251002_082057/07_project_structure.txt
+./build_logs_20251002_082057/08_build_reports_list.txt
+./build_logs_20251002_082057/09_problems_report.html
+./build_logs_20251002_082057/10_key_errors.txt
+./build_logs_20251002_082057/SUMMARY.txt
+./build_safe.sh
+./build_secure.sh
+./build_smart.sh
+./build_success_backup/endless_items-1.0.2-b01bff.jar
+./build_success_backup/endless_items-1.0.2-dev-b01bff-original.jar
+./check_resources.sh
+./collect_errors.sh
+./fabric-loom.jar
+./fabric.mod.json
+./fix_build.sh
+./gradle.properties
+./gradle/wrapper/gradle-wrapper.jar
+./gradle/wrapper/gradle-wrapper.properties
+./gradlew
+./gradlew.bat
+./manual_remap.sh
+./project_snapshot.txt
+./remap_backups/endless_items-1.0.2-dev-backup-20251002_112041.jar
+./remap_fixed.sh
+./remap_safe.sh
+./settings.gradle
+./src/client/java/com/example/ExampleModClient.java
+./src/client/java/com/example/mixin/client/ExampleClientMixin.java
+./src/client/resources/modid.client.mixins.json
+./src/main/java/com/example/ExampleMod.java
+./src/main/java/com/example/mixin/ExampleMixin.java
+./src/main/resources/assets/endless_items/blockstates/street_block.json
+./src/main/resources/assets/endless_items/blockstates/test_stone.json
+./src/main/resources/assets/endless_items/lang/en_us.json
+./src/main/resources/assets/endless_items/models/block/street_block.json
+./src/main/resources/assets/endless_items/models/block/test_stone.json
+./src/main/resources/assets/endless_items/textures/block/street_block.png
+./src/main/resources/assets/endless_items/textures/item/simple_sword.png
+./src/main/resources/endless_items.mixins.json
+./src/main/resources/fabric.mod.json
+
+=== build.gradle ===
+plugins {
+    id 'fabric-loom' version '1.3.9'
+    id 'maven-publish'
+}
+
+version = project.mod_version
+group = project.maven_group
+
+base {
+    archivesName = project.archives_base_name
+}
+
+repositories {
+    maven { url "https://maven.aliyun.com/repository/public" }
+    maven { url "https://maven.fabricmc.net/" }
+    mavenCentral()
+}
+
+loom {
+    runs {
+        client {
+            client()
+            configName = "Client"
+            runDir = "run/client"
+        }
+        server {
+            server()
+            configName = "Server" 
+            runDir = "run/server"
+        }
+    }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:1.20.1"
+    mappings "net.fabricmc:yarn:1.20.1+build.10:v2"
+    modImplementation "net.fabricmc:fabric-loader:0.14.22"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:0.92.5+1.20.1"
+}
+
+processResources {
+    inputs.property "version", project.version
+    filesMatching("fabric.mod.json") {
+        expand "version": project.version
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = "UTF-8"
+    options.release = 17
+}
+
+java {
+    withSourcesJar()
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+jar {
+    from("LICENSE") {
+        rename { "${it}_${project.base.archivesName.get()}"}
+    }
+}
+
+=== fabric.mod.json ===
+{
+  "schemaVersion": 1,
+  "id": "endless_items",
+  "version": "1.0.2",
+  "name": "Endless Items",
+  "description": "Test mod",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.TestMod"
+    ]
+  },
+  "mixins": []
+}
+
+=== Java文件列表 ===
+--- src/client/java/com/example/ExampleModClient.java ---
+package com.example;
+
+import net.fabricmc.api.ClientModInitializer;
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.rendering.v1.HudRenderCallback;
+import net.fabricmc.fabric.api.client.screen.v1.ScreenEvents;
+import net.minecraft.client.gui.screen.ingame.InventoryScreen;
+import net.minecraft.client.render.RenderLayer;
+import net.minecraft.client.util.math.MatrixStack;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.text.Text;
+
+public class ExampleModClient implements ClientModInitializer {
+    @Override
+    public void onInitializeClient() {
+        BlockRenderLayerMap.INSTANCE.putBlock(ExampleMod.STREET_BLOCK, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ExampleMod.TEST_STONE, RenderLayer.getCutout());
+
+        ScreenEvents.AFTER_INIT.register((client, screen, width, height) -> {
+            if (screen instanceof InventoryScreen) {
+                ScreenEvents.afterRender(screen).register((scr, context, mouseX, mouseY, delta) -> {
+                    context.drawTextWithShadow(
+                        client.textRenderer,
+                        Text.literal("无尽物品模组"),
+                        scr.width - 100,
+                        10,
+                        0xFFFFFF
+                    );
+                });
+            }
+        });
+
+        HudRenderCallback.EVENT.register((drawContext, tickDelta) -> {
+            renderModHud(drawContext);
+        });
+    }
+
+    private void renderModHud(net.minecraft.client.gui.DrawContext drawContext) {
+        PlayerEntity player = net.minecraft.client.MinecraftClient.getInstance().player;
+        if (player != null && (player.getMainHandStack().getItem() == ExampleMod.SIMPLE_SWORD || 
+            player.getOffHandStack().getItem() == ExampleMod.SIMPLE_SWORD)) {
+            int x = 10;
+            int y = 10;
+            drawContext.drawTextWithShadow(
+                net.minecraft.client.MinecraftClient.getInstance().textRenderer,
+                Text.literal("§c无尽之剑效果激活§r"),
+                x, y, 0xFFFFFF
+            );
+            drawContext.drawTextWithShadow(
+                net.minecraft.client.MinecraftClient.getInstance().textRenderer,
+                Text.literal("§a无敌 §e飞行 §b缓降"),
+                x, y + 12, 0xFFFFFF
+            );
+        }
+    }
+}
+--- src/client/java/com/example/mixin/client/ExampleClientMixin.java ---
+package com.example.mixin.client;
+
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.text.Text;
+import java.time.LocalTime;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+
+@Mixin(MinecraftClient.class)
+public class ExampleClientMixin {
+    @Inject(at = @At("TAIL"), method = "joinWorld")
+    private void onJoinWorld(CallbackInfo ci) {
+        MinecraftClient client = MinecraftClient.getInstance();
+        if (client.player != null) {
+            String greeting = getRealTimeGreeting();
+            client.player.sendMessage(Text.literal(greeting), false);
+        }
+    }
+
+    private String getRealTimeGreeting() {
+        int hour = LocalTime.now().getHour();
+        if (hour >= 5 && hour < 12) {
+            return "上午好呀！今天过得怎么样？祝你游戏愉快！";
+        } else if (hour >= 12 && hour < 18) {
+            return "下午好呀！享受美好的游戏时光吧！";
+        } else if (hour >= 18 && hour < 22) {
+            return "晚上好呀！愿你在游戏中度过愉快的夜晚！";
+        } else {
+            return "夜深了，注意休息哦！游戏虽好，不要熬夜～";
+        }
+    }
+}
+--- src/main/java/com/example/ExampleMod.java ---
+package com.example;
+
+/*
+ * MIT License
+ *
+ * Copyright (c) 2024 明天会更好
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
+import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.mob.MobEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.*;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
+import net.minecraft.server.world.ServerWorld;
+import net.minecraft.text.Text;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.TypedActionResult;
+import net.minecraft.util.Hand;
+import net.minecraft.world.World;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class ExampleMod implements ModInitializer {
+    public static final String MOD_ID = "endless_items";
+    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+
+    public static final Item SIMPLE_SWORD = new SwordItem(ToolMaterials.NETHERITE, 3, -2.4F, new Item.Settings().fireproof()) {
+        @Override
+        public boolean hasGlint(ItemStack stack) {
+            return true;
+        }
+
+        @Override
+        public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
+            if (!target.getWorld().isClient && target instanceof LivingEntity) {
+                target.setHealth(0.0F);
+            }
+            return super.postHit(stack, target, attacker);
+        }
+
+        @Override
+        public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
+            if (!world.isClient && entity instanceof PlayerEntity player) {
+                boolean holdingSword = player.getMainHandStack().getItem() == this || player.getOffHandStack().getItem() == this;
+                
+                if (holdingSword) {
+                    player.addStatusEffect(new StatusEffectInstance(StatusEffects.RESISTANCE, 40, 255, false, false));
+                    player.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 40, 255, false, false));
+                    player.addStatusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 40, 255, false, false));
+                    player.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOW_FALLING, 40, 255, false, false));
+                    
+                    if (!player.getAbilities().allowFlying) {
+                        player.getAbilities().allowFlying = true;
+                        player.sendAbilitiesUpdate();
+                    }
+                } else if (!player.isCreative() && player.getAbilities().allowFlying) {
+                    player.getAbilities().allowFlying = false;
+                    player.getAbilities().flying = false;
+                    player.sendAbilitiesUpdate();
+                }
+            }
+        }
+        @Override
+        public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
+            if (!world.isClient) {
+                ServerWorld serverWorld = (ServerWorld) world;
+                int mobCount = 0;
+                
+                for (Entity entity : serverWorld.iterateEntities()) {
+                    if (entity instanceof MobEntity mob && entity != user) {
+                        mob.discard();
+                        mobCount++;
+                    }
+                }
+                
+                user.sendMessage(Text.literal("清除了 " + mobCount + " 个生物"), true);
+            }
+            return TypedActionResult.success(user.getStackInHand(hand), true);
+        }
+    };
+
+    public static final Block STREET_BLOCK = new Block(
+        AbstractBlock.Settings.copy(Blocks.STONE).strength(1.5f)
+    );
+
+    public static final Block TEST_STONE = new Block(
+        AbstractBlock.Settings.copy(Blocks.STONE)
+            .strength(-1.0f, 3600000.0f)
+            .dropsNothing()
+    ) {
+        @Override
+        public float getHardness() {
+            return -1.0f;
+        }
+    };
+
+    public static final BlockItem TEST_STONE_ITEM = new BlockItem(TEST_STONE, new Item.Settings()) {
+        @Override
+        public boolean hasGlint(ItemStack stack) {
+            return true;
+        }
+    };
+
+    public static final RegistryKey<ItemGroup> ENDLESS_ITEMS_GROUP = RegistryKey.of(RegistryKeys.ITEM_GROUP, new Identifier(MOD_ID, "endless_items"));
+
+    @Override
+    public void onInitialize() {
+        final ItemGroup ENDLESS_GROUP = FabricItemGroup.builder()
+            .displayName(Text.translatable("itemGroup.endless_items.endless_items"))
+            .icon(() -> new ItemStack(SIMPLE_SWORD))
+            .build();
+
+        Registry.register(Registries.ITEM_GROUP, ENDLESS_ITEMS_GROUP, ENDLESS_GROUP);
+        Registry.register(Registries.ITEM, new Identifier(MOD_ID, "simple_sword"), SIMPLE_SWORD);
+        Registry.register(Registries.BLOCK, new Identifier(MOD_ID, "street_block"), STREET_BLOCK);
+        Registry.register(Registries.ITEM, new Identifier(MOD_ID, "street_block"), new BlockItem(STREET_BLOCK, new Item.Settings()));
+        Registry.register(Registries.BLOCK, new Identifier(MOD_ID, "test_stone"), TEST_STONE);
+        Registry.register(Registries.ITEM, new Identifier(MOD_ID, "test_stone"), TEST_STONE_ITEM);
+
+        ServerLivingEntityEvents.ALLOW_DAMAGE.register((entity, source, amount) -> {
+            if (entity instanceof PlayerEntity player) {
+                if (player.getMainHandStack().getItem() == SIMPLE_SWORD || player.getOffHandStack().getItem() == SIMPLE_SWORD) {
+                    return false;
+                }
+            }
+            return true;
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ENDLESS_ITEMS_GROUP).register(entries -> {
+            entries.add(SIMPLE_SWORD);
+            entries.add(STREET_BLOCK.asItem());
+            entries.add(TEST_STONE.asItem());
+        });
+
+        LOGGER.info("\n" +
+            "╔══════════════════════════════════════╗\n" +
+            "║             无 尽 物 品              ║\n" +
+            "╠══════════════════════════════════════╣\n" +
+            "║ Endless Items Mod v1.0.2            ║\n" +
+            "║ 添加了3个特殊物品                   ║\n" +
+            "║ Author: 明天会更好                  ║\n" +
+            "╚══════════════════════════════════════╝\n" +
+            "模组加载成功！"
+        );
+    }
+}
+
+--- src/main/java/com/example/mixin/ExampleMixin.java ---
+package com.example.mixin;
+
+import com.example.ExampleMod;
+import net.minecraft.server.MinecraftServer;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+
+@Mixin(MinecraftServer.class)
+public class ExampleMixin {
+    
+    @Inject(at = @At("HEAD"), method = "startServer")
+    private void onServerStart(CallbackInfo ci) {
+        ExampleMod.LOGGER.info("无尽物品模组服务器启动完成");
+    }
+}
+

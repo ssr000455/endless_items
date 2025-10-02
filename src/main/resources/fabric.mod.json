@@ -1,0 +1,37 @@
+{
+"schemaVersion": 1,
+"id": "endless_items",
+"version": "1.0.2",
+"name": "无尽物品",
+"description": "这个模组只添加了三个物品",
+"authors": [
+"明天会更好"
+],
+"contact": {
+"homepage": "https://fabricmc.net/",
+"sources": "https://github.com/FabricMC/fabric-example-mod"
+},
+"license": "CC0-1.0",
+"icon": "assets/endless_items/icon.png",
+"environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.ExampleMod"
+    ],
+    "client": [
+      "com.example.ExampleModClient"
+    ]
+  },
+  "mixins": [
+    "endless_items.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.22",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": ">=0.92.0"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
