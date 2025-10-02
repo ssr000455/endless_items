@@ -36,15 +36,13 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
-import net.minecraft.registry.RegistryKey;
-import net.minecraft.registry.RegistryKeys;
-import net.minecraft.server.world.ServerWorld;
-import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.Hand;
+import net.minecraft.util.registry.Registry;
+import net.minecraft.util.registry.RegistryKey;
+import net.minecraft.server.world.ServerWorld;
+import net.minecraft.text.Text;
 import net.minecraft.world.World;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -102,8 +100,7 @@ public class ExampleMod implements ModInitializer {
                         mob.discard();
                         mobCount++;
                     }
-                }
-                
+                }                
                 user.sendMessage(Text.literal("清除了 " + mobCount + " 个生物"), true);
             }
             return TypedActionResult.success(user.getStackInHand(hand), true);
@@ -132,7 +129,7 @@ public class ExampleMod implements ModInitializer {
         }
     };
 
-    public static final RegistryKey<ItemGroup> ENDLESS_ITEMS_GROUP = RegistryKey.of(RegistryKeys.ITEM_GROUP, new Identifier(MOD_ID, "endless_items"));
+    public static final RegistryKey<ItemGroup> ENDLESS_ITEMS_GROUP = RegistryKey.of(Registry.ITEM_GROUP_KEY, new Identifier(MOD_ID, "endless_items"));
 
     @Override
     public void onInitialize() {
@@ -141,12 +138,12 @@ public class ExampleMod implements ModInitializer {
             .icon(() -> new ItemStack(SIMPLE_SWORD))
             .build();
 
-        Registry.register(Registries.ITEM_GROUP, ENDLESS_ITEMS_GROUP, ENDLESS_GROUP);
-        Registry.register(Registries.ITEM, new Identifier(MOD_ID, "simple_sword"), SIMPLE_SWORD);
-        Registry.register(Registries.BLOCK, new Identifier(MOD_ID, "street_block"), STREET_BLOCK);
-        Registry.register(Registries.ITEM, new Identifier(MOD_ID, "street_block"), new BlockItem(STREET_BLOCK, new Item.Settings()));
-        Registry.register(Registries.BLOCK, new Identifier(MOD_ID, "test_stone"), TEST_STONE);
-        Registry.register(Registries.ITEM, new Identifier(MOD_ID, "test_stone"), TEST_STONE_ITEM);
+        Registry.register(Registry.ITEM_GROUP, ENDLESS_ITEMS_GROUP, ENDLESS_GROUP);
+        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "simple_sword"), SIMPLE_SWORD);
+        Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "street_block"), STREET_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "street_block"), new BlockItem(STREET_BLOCK, new Item.Settings()));
+        Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "test_stone"), TEST_STONE);
+        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "test_stone"), TEST_STONE_ITEM);
 
         ServerLivingEntityEvents.ALLOW_DAMAGE.register((entity, source, amount) -> {
             if (entity instanceof PlayerEntity player) {
@@ -170,8 +167,9 @@ public class ExampleMod implements ModInitializer {
             "║ Endless Items Mod v1.0.2            ║\n" +
             "║ 添加了3个特殊物品                   ║\n" +
             "║ Author: 明天会更好                  ║\n" +
+            "║ © 2024 保留所有权限                 ║\n" +
             "╚══════════════════════════════════════╝\n" +
             "模组加载成功！"
         );
     }
-}
+                          }
