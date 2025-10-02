@@ -9,12 +9,15 @@ import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.text.Text;
+import static com.example.ExampleMod.STREET_BLOCK;
+import static com.example.ExampleMod.TEST_STONE;
+import static com.example.ExampleMod.SIMPLE_SWORD;
 
 public class ExampleModClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
-        BlockRenderLayerMap.INSTANCE.putBlock(ExampleMod.STREET_BLOCK, RenderLayer.getCutout());
-        BlockRenderLayerMap.INSTANCE.putBlock(ExampleMod.TEST_STONE, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(STREET_BLOCK, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(TEST_STONE, RenderLayer.getCutout());
 
         ScreenEvents.AFTER_INIT.register((client, screen, width, height) -> {
             if (screen instanceof InventoryScreen) {
@@ -37,8 +40,8 @@ public class ExampleModClient implements ClientModInitializer {
 
     private void renderModHud(net.minecraft.client.gui.DrawContext drawContext) {
         PlayerEntity player = net.minecraft.client.MinecraftClient.getInstance().player;
-        if (player != null && (player.getMainHandStack().getItem() == ExampleMod.SIMPLE_SWORD || 
-            player.getOffHandStack().getItem() == ExampleMod.SIMPLE_SWORD)) {
+        if (player != null && (player.getMainHandStack().getItem() == SIMPLE_SWORD || 
+            player.getOffHandStack().getItem() == SIMPLE_SWORD)) {
             int x = 10;
             int y = 10;
             drawContext.drawTextWithShadow(
