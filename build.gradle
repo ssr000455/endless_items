@@ -15,7 +15,6 @@ repositories {
     maven { url "https://maven.aliyun.com/repository/gradle-plugin" }
     mavenCentral()
     maven { url "https://maven.fabricmc.net/" }
-    maven { url "https://libraries.minecraft.net/" }
 }
 
 dependencies {
@@ -45,5 +44,33 @@ java {
 jar {
     from("LICENSE") {
         rename { "${it}_${project.base.archivesName.get()}"}
+    }
+}
+
+remapJar {
+    doFirst {
+        println "开始重映射，输入文件:"
+        File inputJar = tasks.jar.archiveFile.get().asFile
+        if (inputJar.exists()) {
+            println "输入JAR: ${inputJar.name} (${inputJar.length()} bytes)"
+            println "输入内容:"
+            exec {
+                commandLine 'unzip', '-l', inputJar.absolutePath
+            }
+        }
+    }
+    
+    doLast {
+        File outputJar = archiveFile.get().asFile
+        println "重映射完成:"
+        println "输出JAR: ${outputJar.name} (${outputJar.length()} bytes)"
+        println "输出内容:"
+        exec {
+            commandLine 'unzip', '-l', outputJar.absolutePath
+        }
+        
+        if (outputJar.length() < 10240) {
+            throw new GradleException("重映射失败：输出文件太小")
+        }
     }
 }
