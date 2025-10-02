@@ -22,15 +22,30 @@ jobs:
     - name: Make gradlew executable
       run: chmod +x ./gradlew
     
-    - name: Build with Gradle
+    - name: Clean previous builds
+      run: ./gradlew clean --no-daemon
+    
+    - name: Download dependencies
+      run: ./gradlew dependencies --no-daemon
+    
+    - name: Build development JAR
+      run: ./gradlew build --no-daemon
+    
+    - name: Remap to production JAR
       run: ./gradlew remapJar --no-daemon
     
-    - name: List build artifacts
-      run: ls -la build/libs/
+    - name: Check generated files
+      run: |
+        echo "=== 检查构建目录 ==="
+        find build/ -name "*.jar" -type f | xargs ls -la
+        echo "=== JAR文件详情 ==="
+        find build/ -name "*.jar" -exec echo "File: {}" \; -exec unzip -l {} \; || true
     
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4
       with:
         name: mod-build
-        path: build/libs/*.jar
+        path: |
+          build/libs/*.jar
+          build/reports/**
         retention-days: 30
